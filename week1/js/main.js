@@ -8,7 +8,14 @@ var links = [
     {
         label: "Week 2",
         notes: "Notes and Examples",
-        url: "https://edenborrowman.github.io/WDD330/week1/notes.html"
+        url: "https://edenborrowman.github.io/WDD330/week/notes.html"
+
+    },
+
+    {
+        label: "Week 2",
+        notes: "Notes and Examples",
+        url: "https://edenborrowman.github.io/WDD330/week/notes.html"
 
     }
 ]
