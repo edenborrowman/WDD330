@@ -23,7 +23,7 @@ let new_notes = document.createElement('a');
 
 new_week.textContent = links[i].label;
 new_notes.textContent = links[i].notes;
-new_notes.setAttribute('href', links[0].url);
+new_notes.setAttribute('href', links[i].url);
 
 document.querySelector('ol.new_entry').appendChild(new_week);
 document.querySelector('ol.new_entry').appendChild(new_notes);
