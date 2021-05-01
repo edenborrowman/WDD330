@@ -12,12 +12,7 @@ var links = [
 
     },
 
-    {
-        label: "Week 2",
-        notes: "Notes and Examples",
-        url: "https://edenborrowman.github.io/WDD330/week3/notes.html"
-
-    }
+    
 ]
 var i;
 
