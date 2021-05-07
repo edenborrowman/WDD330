@@ -14,13 +14,24 @@
     <nav></nav>
     <main>
         <h1>Practice from Modern JavaScript Tutorial #5 - Objects</h1>
-        <p>Please see console log for information.</p>
-        <p>Exercises can be found at The Net Ninja's Modern JavaScript Tutorial #5: Objects </p><a href=https://www.youtube.com/watch?v=X0ipw1k7ygU&t=934s>link</a>
+        <p>Please see console log for exercises.</p>
+        <p>Source for exercises (part 1) can be found at <a href=https://www.youtube.com/watch?v=X0ipw1k7ygU&t=934s>The Net Ninja's Modern JavaScript Tutorial #5: Objects</a></p>
+        <p>Source for exercises (part 2) can be found at <a href=https://www.youtube.com/watch?v=wKBu_dEaF9E&t=1001s>The Net Ninja's Modern JavaScript Tutorial #6: The Document Object Model</a></p><br><br>
+        <p>code used in DOM exercises:</p>
+        <div>
+            <p>hello, world</p>
+            <p>lorem ipsum</p>
+            <p class ="error">this is an error message</p>
+        </div>
+        <div class="error">this is another error message</div>
+        
     </main>
     <footer></footer>
     <script>
 
-        //OBJECT LITERAL BASICS
+        //EXERCISES PART 1: Objects
+
+            //OBJECT LITERAL BASICS
                 //object literal creation
                 //filled with key/value pairs, separated by commas
 
@@ -68,7 +79,7 @@
                 //typeof
                 console.log(typeof user);
         
-        //OBJECT METHODS
+             //OBJECT METHODS
                 //key/value pairs
 
                 //methods look like regular functions but they're defined on the object.
@@ -85,9 +96,9 @@
                user.logBlogs();
                
 
-        //STORING OBJECTS IN AN ARRAY...IN AN OBJECT. BUCKLE UP.
+             //STORING OBJECTS IN AN ARRAY...IN AN OBJECT. BUCKLE UP.
                 
-        const blog2 ={
+                const blog2 ={
                     names: [
                         {title: 'why mac & cheese rules',
                         likes: 30}, 
@@ -108,13 +119,13 @@
                 blog2.practiceFunction();
                 
                 
-        //Math Object
+            //Math Object
 
             console.table(Math);
             console.log(Math.PI);
             console.log(Math.E);
 
-        //Math Object methods
+            //Math Object methods
 
             const area = 7.7
 
@@ -123,13 +134,13 @@
             console.log(Math.ceil(area));
             console.log(Math.trunc(area));
 
-        //Random Numbes
+         //Random Numbes
             const random = Math.random();
             console.log(random);
 
             console.log(Math.round(random * 100));
 
-        //Reference Values vs. Primitive Values
+         //Reference Values vs. Primitive Values
 
             //first, the primitive values:
             let scoreOne = 50;
@@ -153,7 +164,26 @@
             console.log(user1, user2);
 
             //Oop! They BOTH change! Why? Because objects aren't stored on the stack. They're stored on the heap. When I "copied" user1 to make user2, I only copied the LINK to the info in the heap. User 2 didn't get its own information. It just pointed to the same object that user1 pointed to. So if I change that info for user1, I defacto change it for user2 as well. Be aware!
-                
+    
+    //EXERCISES PART 2: The Document Object Model
+
+          // THE DOM
+          console.log(document); //models the page
+          console.log(document.location);
+
+
+          //Querying a single element in the DOM
+            const para = document.querySelector('p'); //gets first instance of the element
+            console.log(para);
+            const para2 = document.querySelector('body > main > div > p:nth-child(1)');  //gets exactly the one I'm looking for using instpec>copy>element selector 
+            console.log(para2);
+            const para3 = document.querySelector('.error'); //getting element by class using CSS selector
+            console.log(para3);
+            const para4 = document.querySelector('div.error'); //getting element by element name AND class selector (to be even more specific)
+            console.log(para4);
+
+        //Querying multiple elements in the DOM
+
     </script>
   </body>
 </html>
