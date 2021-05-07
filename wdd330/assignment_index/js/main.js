@@ -1,4 +1,4 @@
-var links = [
+let links = [
     {
         label: "Week 1",
         notes: "Notes and Examples",
