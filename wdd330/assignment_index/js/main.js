@@ -8,33 +8,41 @@ let links = [
     {
         label: "Week 2",
         notes: "Notes and Examples",
-        url: "https://edenborrowman.github.io/WDD330/wdd330/assignment_index/notes2.html"
+        url: "https://edenborrowman.github.io/WDD330/wdd330/assignment_index/notes2.html",
+        group: "Weekly Group Assignment",
+        teamUrl: "https://edenborrowman.github.io/WDD330/wdd330/teamMeeting/week2.html"
 
     },
     {
         label: "Week 3",
         notes: "Notes and Examples",
-        url: "https://edenborrowman.github.io/WDD330/wdd330/assignment_index/notes3.html"
+        url: "https://edenborrowman.github.io/WDD330/wdd330/assignment_index/notes3.html",
+        group: "Weekly Group Assignment",
+        teamUrl: "https://edenborrowman.github.io/WDD330/wdd330/teamMeeting/week2.html"
 
     }
 
     
 ]
-var i;
+// var i;
 
-for(i = 0; i<links.length; i++){
+// for(i = 0; i<links.length; i++){
 
-let new_week = document.createElement('li');
-let new_notes = document.createElement('a');
+// let new_week = document.createElement('li');
+// let new_notes = document.createElement('a');
+// let new_group = document.createElement('a');
 
-new_week.textContent = links[i].label;
-new_notes.textContent = links[i].notes;
-new_notes.setAttribute('href', links[i].url);
+// new_week.textContent = links[i].label;
+// new_notes.textContent =links[i].notes;
+// new_notes.setAttribute('href', links[i].url);
+// new_group.textContent = links[i].group;
+// new_group.setAttribute('href', links[i].teamUrl);
 
-document.querySelector('ol.new_entry').appendChild(new_week);
-document.querySelector('ol.new_entry').appendChild(new_notes);
+// document.querySelector('ul.new_entry').appendChild(new_week);
+// document.querySelector('ul.new_entry').appendChild(new_notes);
+// document.querySelector('ul.new_entry').appendChild(new_group);
 
-}
+// }
 
 let daynames = [
     "Sunday",
