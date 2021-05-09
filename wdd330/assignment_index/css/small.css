@@ -37,7 +37,7 @@ body {
   }
   a {
     text-decoration: none;
-    color: #53c905;
+    color: #419c04;
   }
 
   a:hover {
@@ -57,6 +57,15 @@ body {
     padding: 1.5rem;
     text-align: center;
   }
+
+  footer a {
+    color: yellow;
+  }
+
+  footer a:visited {
+    color: rgb(250, 199, 104);
+  }
+ 
   
  img {
     width: 250px;
