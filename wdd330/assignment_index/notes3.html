@@ -1,191 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />    
-    <meta
-      name="description"
-      content="~155 characters summarizing with keyords the page content - on page SEO"
-    />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="~155 characters summarizing with keyords the page content - on page SEO" />
     <title>Week 3 Notes</title>
     <link rel="stylesheet" href="" />
-  </head>
-  <body>
+    <link rel='stylesheet' href='notes3.css'>
+</head>
+
+<body>
     <header></header>
     <nav></nav>
     <main>
         <h1>Practice from Modern JavaScript Tutorial #5 - Objects</h1>
         <p>Please see console log for exercises.</p>
-        <p>Source for exercises (part 1) can be found at <a href=https://www.youtube.com/watch?v=X0ipw1k7ygU&t=934s>The Net Ninja's Modern JavaScript Tutorial #5: Objects</a></p>
-        <p>Source for exercises (part 2) can be found at <a href=https://www.youtube.com/watch?v=wKBu_dEaF9E&t=1001s>The Net Ninja's Modern JavaScript Tutorial #6: The Document Object Model</a></p><br><br>
-        <p>code used in DOM exercises:</p>
-        <div>
-            <p>hello, world</p>
-            <p>lorem ipsum</p>
-            <p class ="error">this is an error message</p>
+        <p>Source for exercises (part 1) can be found at <a href=https://www.youtube.com/watch?v=X0ipw1k7ygU&t=934s>The
+                Net Ninja's Modern JavaScript Tutorial #5: Objects</a></p>
+        <p>Source for exercises (part 2) can be found at <a href=https://www.youtube.com/watch?v=wKBu_dEaF9E&t=1001s>The
+                Net Ninja's Modern JavaScript Tutorial #6: The Document Object Model</a></p><br><br>
+        <p>The following is dummy code used in DOM exercises:</p>
+
+        <div id='working_html'>
+            <div>
+                <h1 id="page-title">The DOM</h1>
+                <p>hello, world</p>
+                <p>lorem ipsum</p>
+                <p class="error">this is an error message</p>
+            </div>
+            <div class="error">this is another error message</div>
+            <div class="content">
+                <p>this is content</p>
+            </div>
+            <a href="https://www.google.com">Link to somewhere cool...</a>
+            <p class="apples">lorem ipsum</p>
+            <p class="error another test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et rerum ea at exercitationem optio! Esse itaque inventore odio libero recusandae!</p>
+            
+            <h1 class='pears'>I'm a title!</h1>
+            <p>lorem error ipsum</p>
+            <p>lorem success ipsum</p>
+            <p>lorem ipsum ipsum</p>
+            <p>lorem ipsum success</p>
+            <p>error lorem ipsum</p>
+            <p>lorem ipsum lorem</p>
+            <p>lorem ipsum ipsum</p>
+            <p>lorem ipsum error</p>
+            <p>success lorem ipsum</p>
+
+            <div id="book-list">
+                <h2 class="tomatoes">Books to Read</h2>
+            </div>
         </div>
-        <div class="error">this is another error message</div>
-        
+
     </main>
     <footer></footer>
-    <script>
-
-        //EXERCISES PART 1: Objects
-
-            //OBJECT LITERAL BASICS
-                //object literal creation
-                //filled with key/value pairs, separated by commas
-
-             
-                
-
-                let user = {
-                    name: 'Crystal',
-                    age: 30,
-                    email: 'crystal@netninja.co.uk',
-                    location: 'Berlin',
-                    blogs: ['why mac & cheese rules', '10 things to make with marmite'],
-                    login: function(){
-                        console.log('the user logged in');
-                    },
-                    logout: function(){
-                        console.log('the user logged out');
-                    },
-
-                    //note the syntax here...it's still a regular function, like the two above it, but we omit the word "function." It just makes it easier to read and write since it's cleaner, but it works the same.
-                    logBlogs(){
-                        console.log("this user has written the following blogs: ");
-                        this.blogs.forEach(blog => {
-                            console.log(blog)})
-
-                    }
-                };
-
-                console.log(user);
-
-                //accessing properties in the object
-
-                console.log(user.name);
-
-                //overwrite or update one of the properties, first with dot notation, then with square bracket notation:
-                user.age = 35;
-                console.log(user.age);
-                console.log(user['email']);
-
-                //update properties using square bracket notation instead of .notation. Can be useful to know how to do this, though dot notation is probably faster/easier. Pay attention...must be entered as string (note the quotation marks around name)
-
-                user['name'] = 'Chun-li';
-                console.log(user['name']);
-
-                //typeof
-                console.log(typeof user);
-        
-             //OBJECT METHODS
-                //key/value pairs
-
-                //methods look like regular functions but they're defined on the object.
-
-                //creating a method for this object. Calling it login. This is how you call it:
-
-                user.login();
-                user.logout();
-
-                //method to log out blogs, the array in the object
-                //need to use 'this' to access it.
-                //'this' is tricky with methods. We set the method up with a regular function because otherwise, 'this' would refer to the window object, not the object we've created (user, in this case).
-
-               user.logBlogs();
-               
-
-             //STORING OBJECTS IN AN ARRAY...IN AN OBJECT. BUCKLE UP.
-                
-                const blog2 ={
-                    names: [
-                        {title: 'why mac & cheese rules',
-                        likes: 30}, 
-                        {title: '10 things to make with vegimite',
-                        likes: 50}
-                    ],
-                    practiceFunction(){
-                        console.log('The user also wrote ');
-                        this.names.forEach(entry => {
-                            console.log(entry)})
-
-                    }
-        };
-                
-                console.log(blog2);
-                console.log(blog2.names[0]);
-                console.log(typeof blog2.names[0]);
-                blog2.practiceFunction();
-                
-                
-            //Math Object
-
-            console.table(Math);
-            console.log(Math.PI);
-            console.log(Math.E);
-
-            //Math Object methods
-
-            const area = 7.7
-
-            console.log(Math.round(area));
-            console.log(Math.floor(area));
-            console.log(Math.ceil(area));
-            console.log(Math.trunc(area));
-
-         //Random Numbes
-            const random = Math.random();
-            console.log(random);
-
-            console.log(Math.round(random * 100));
-
-         //Reference Values vs. Primitive Values
-
-            //first, the primitive values:
-            let scoreOne = 50;
-            let scoreTwo = scoreOne;
-
-            console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
-
-            //what happens when we change scoreOne?
-            scoreOne = 100;
-            console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
-
-            //note, in the example above, scoreOne changed, but scoreTwo DID NOT. Because it's in the stack. It's its own copy since it is a primitive value.
-
-            //now, the reference values:
-            const user1 = { name: 'ryu', age: 30};
-            user2 = user1;
-            console.log(user1, user2);
-
-            //now, what if I change the name here?
-            user1.name = 'Jenny';
-            console.log(user1, user2);
-
-            //Oop! They BOTH change! Why? Because objects aren't stored on the stack. They're stored on the heap. When I "copied" user1 to make user2, I only copied the LINK to the info in the heap. User 2 didn't get its own information. It just pointed to the same object that user1 pointed to. So if I change that info for user1, I defacto change it for user2 as well. Be aware!
-    
-    //EXERCISES PART 2: The Document Object Model
-
-          // THE DOM
-          console.log(document); //models the page
-          console.log(document.location);
-
-
-          //Querying a single element in the DOM
-            const para = document.querySelector('p'); //gets first instance of the element
-            console.log(para);
-            const para2 = document.querySelector('body > main > div > p:nth-child(1)');  //gets exactly the one I'm looking for using instpec>copy>element selector 
-            console.log(para2);
-            const para3 = document.querySelector('.error'); //getting element by class using CSS selector
-            console.log(para3);
-            const para4 = document.querySelector('div.error'); //getting element by element name AND class selector (to be even more specific)
-            console.log(para4);
-
-        //Querying multiple elements in the DOM using 
-
+    <script src='notes3.js'>
     </script>
-  </body>
+</body>
+
 </html>
-
-

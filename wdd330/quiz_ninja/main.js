@@ -20,3 +20,5 @@ for(const[question, answer] of quiz) {
 
 }
 alert(`Game Over, you scored ${score} point${score !== 1 ? 's' : ''}`);
+
+
