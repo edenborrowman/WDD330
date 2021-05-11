@@ -111,13 +111,13 @@ function checkWin() {
  
 
 let tie_game = Array.from(squares);
-let count = 1;
+let count = 0;
 
 function isDraw() {
   for (i = 0; i < tie_game.length; i++) {
     if (squares[i].innerHTML == "X" || "O") {
       count++;
-      if (count == 82) {
+      if (count == 81) {
         document.querySelector("h2").innerHTML = `It's a draw`;
         document.querySelector("h3").classList.add("no_display");
       }
