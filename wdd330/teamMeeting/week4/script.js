@@ -4,6 +4,9 @@ const player2 = "O";
 let current_player = player1;
 const squares = Array.from(document.querySelectorAll(".cell"));
 const board = document.querySelector(".game_grid");
+function message() {
+    let msg = document.querySelector('h3').textContent ="It's " + `${current_player}` + "'s" + " turn.";
+    }
 
 
 //EVENT LISTENER...DID THE PLAYER CLICK?
@@ -16,15 +19,18 @@ function playerPlayed(e) {
         current_player = player1;
     }
     checkWin();
+    message();
 }
 
 board.addEventListener("click", playerPlayed);
+
 
 //Resetting The Board
 
 function reset() {
     document.querySelectorAll(".cell").forEach((cell) => (cell.textContent = ""));
     document.querySelector('h2').innerHTML = "";
+    document.querySelector('h3').classList.toggle('no_display');
 }
 
 //Game Winning Conditions
@@ -65,6 +71,7 @@ function checkWin() {
             win5.textContent.includes("X") &&
             win9.textContent.includes("X"))) {
         document.querySelector("h2").innerHTML = `Player X has won!`;
+        document.querySelector("h3").classList.add('no_display');
     } 
     else if (
         (win1.textContent.includes("O") &&
@@ -93,8 +100,10 @@ function checkWin() {
             win9.textContent.includes("O"))
     ) {
         document.querySelector("h2").innerHTML = `Player O has won!`;
+        document.querySelector("h3").classList.add('no_display');
     }
 
 }
+
 
 
