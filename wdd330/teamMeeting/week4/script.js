@@ -4,8 +4,9 @@ const player2 = "O";
 let current_player = player1;
 const squares = Array.from(document.querySelectorAll(".cell"));
 const board = document.querySelector(".game_grid");
+var msg = document.querySelector('h3').textContent ="It's " + `${current_player}` + "'s" + " turn.";
 function message() {
-    let msg = document.querySelector('h3').textContent ="It's " + `${current_player}` + "'s" + " turn.";
+    msg = document.querySelector('h3').textContent ="It's " + `${current_player}` + "'s" + " turn.";
     }
 
 
@@ -30,7 +31,8 @@ board.addEventListener("click", playerPlayed);
 function reset() {
     document.querySelectorAll(".cell").forEach((cell) => (cell.textContent = ""));
     document.querySelector('h2').innerHTML = "";
-    document.querySelector('h3').classList.toggle('no_display');
+    document.querySelector("h3").classList.remove('no_display');
+    
 }
 
 //Game Winning Conditions
