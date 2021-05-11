@@ -31,7 +31,7 @@ function reset() {
   document.querySelectorAll(".cell").forEach((cell) => (cell.textContent = ""));
   document.querySelector("h2").innerHTML = "";
   document.querySelector("h3").classList.remove("no_display");
-  count = 1;
+  count = 0;
 }
 
 //Game Winning Logic
