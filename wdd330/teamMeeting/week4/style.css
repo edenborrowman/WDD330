@@ -36,8 +36,32 @@ div.cell {
    }
 
 
-div.cell:hover {
+#a:hover {
     background-color:lightskyblue;
+}
+#b:hover {
+    background-color: lightgreen;
+}
+#c:hover {
+    background-color:yellow;
+}
+#d:hover {
+    background-color:lightgreen
+}
+#e:hover {
+    background-color:yellow;
+}
+#f:hover {
+    background-color:lightskyblue;
+}
+#g:hover {
+    background-color:yellow;
+}
+#h:hover {
+    background-color:lightskyblue;
+}
+#i:hover {
+    background-color:lightgreen;
 }
 
 div.cell.border_rt {
@@ -56,10 +80,14 @@ div.cell.border_rt {
  #reset {
     padding: 20px;
     color: navy;
-    background-color:lightskyblue
+    background-color:lightskyblue;
+    font-size:2rem;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border: none;
  }
 
  #reset:hover {
      background-color: rgba(140, 245, 130, 0.918);
-     color:navy;
+     color:rgb(22, 83, 22);
  }
