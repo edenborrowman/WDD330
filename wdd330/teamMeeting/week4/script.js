@@ -3,6 +3,7 @@ const player1 = "X";
 const player2 = "O";
 let current_player = player1;
 const board = document.querySelector(".game_grid");
+const squares = document.querySelectorAll(".cell")
 
 
 //EVENT LISTENER...DID THE PLAYER CLICK?
@@ -31,8 +32,10 @@ function reset() {
     document.querySelectorAll(".cell").forEach((cell) => (cell.textContent = ""));
     document.querySelector('h2').innerHTML = "";
     document.querySelector("h3").classList.remove('no_display');
+    count = 1;
     
 }
+
 
 //Game Winning Logic
 function checkWin() {
@@ -73,6 +76,7 @@ function checkWin() {
             win9.textContent.includes("X"))) {
         document.querySelector("h2").innerHTML = `Player X has won!`;
         document.querySelector("h3").classList.add('no_display');
+        return;
     } 
     else if (
         (win1.textContent.includes("O") &&
@@ -99,11 +103,38 @@ function checkWin() {
         (win1.textContent.includes("O") &&
             win5.textContent.includes("O") &&
             win9.textContent.includes("O"))
-    ) {
+    ) 
+     {
         document.querySelector("h2").innerHTML = `Player O has won!`;
         document.querySelector("h3").classList.add('no_display');
+        return;        
+    }
+
+    else {isDraw();}
+    // else if (squares.forEach(square =>{
+    //     if (square.textContent.includes("O" || "X")){
+    //         console.log("fog");
+    //     }
+    // }));
+  }
+
+  let tie_game = Array.from(squares);
+  let count = 1;
+
+  function isDraw(){
+  for(i=0; i<tie_game.length; i++){
+    if(squares[i].innerHTML == "X" || "O") {        
+        count++;
+        if(count == 82){
+            document.querySelector("h2").innerHTML = `It's a draw`; 
+            document.querySelector("h3").classList.add('no_display');
+        }
     }
 }
+  }
+
+
+
 
 
 
