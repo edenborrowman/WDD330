@@ -1,17 +1,15 @@
 //DECLARING THE VARIABLES
 const player1 = "X";
-const player2 = "0";
+const player2 = "O";
 let current_player = player1;
 const squares = Array.from(document.querySelectorAll(".cell"));
-console.log(squares);
 const board = document.querySelector(".game_grid");
-console.log(board);
+
 
 //EVENT LISTENER...DID THE PLAYER CLICK?
 
 function playerPlayed(e) {
-    // console.log(e.target);
-    e.target.innerHTML = current_player;
+     e.target.innerHTML = current_player;
     if (current_player === player1) {
         current_player = player2;
     } else {
@@ -26,7 +24,6 @@ board.addEventListener("click", playerPlayed);
 
 function reset() {
     document.querySelectorAll(".cell").forEach((cell) => (cell.textContent = ""));
-    // document.querySelector(".cell").textContent = "";
     document.querySelector('h2').innerHTML = "";
 }
 
@@ -68,7 +65,8 @@ function checkWin() {
             win5.textContent.includes("X") &&
             win9.textContent.includes("X"))) {
         document.querySelector("h2").innerHTML = `Player X has won!`;
-    } else if (
+    } 
+    else if (
         (win1.textContent.includes("O") &&
             win2.textContent.includes("O") &&
             win3.textContent.includes("O")) ||

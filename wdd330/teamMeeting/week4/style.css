@@ -5,6 +5,9 @@
     font-size: 2rem;    
     text-align: center;
 }
+* {
+    box-sizing: border-box;
+}
 
 div.game_grid {
     display: flex;
@@ -29,9 +32,9 @@ div.cell {
    }
 
 
-/* div.cell:hover {
-    background-color:lightgray;
-} */
+div.cell:hover {
+    background-color:lightskyblue;
+}
 
 div.cell.border_rt {
     border-right: 15px solid;
@@ -48,11 +51,11 @@ div.cell.border_rt {
 
  #reset {
     padding: 20px;
-    color: white;
-    background-color: rgba(33, 82, 173, 0.918)
+    color: navy;
+    background-color:lightskyblue
  }
 
  #reset:hover {
-     background-color: rgba(18, 49, 105, 0.918);
-     color: yellow;
+     background-color: rgba(140, 245, 130, 0.918);
+     color:navy;
  }
