@@ -2,12 +2,7 @@
 const player1 = "X";
 const player2 = "O";
 let current_player = player1;
-const squares = Array.from(document.querySelectorAll(".cell"));
 const board = document.querySelector(".game_grid");
-var msg = document.querySelector('h3').textContent ="It's " + `${current_player}` + "'s" + " turn.";
-function message() {
-    msg = document.querySelector('h3').textContent ="It's " + `${current_player}` + "'s" + " turn.";
-    }
 
 
 //EVENT LISTENER...DID THE PLAYER CLICK?
@@ -25,9 +20,13 @@ function playerPlayed(e) {
 
 board.addEventListener("click", playerPlayed);
 
+//Message to tell who's turn it is
+function message() {
+    msg = document.querySelector('h3').textContent ="It's " + `${current_player}` + "'s" + " turn.";
+    }
+
 
 //Resetting The Board
-
 function reset() {
     document.querySelectorAll(".cell").forEach((cell) => (cell.textContent = ""));
     document.querySelector('h2').innerHTML = "";
@@ -35,7 +34,7 @@ function reset() {
     
 }
 
-//Game Winning Conditions
+//Game Winning Logic
 function checkWin() {
     let win1 = document.querySelector("#a");
     let win2 = document.querySelector("#b");
@@ -104,8 +103,9 @@ function checkWin() {
         document.querySelector("h2").innerHTML = `Player O has won!`;
         document.querySelector("h3").classList.add('no_display');
     }
-
 }
+
+
 
 
 
