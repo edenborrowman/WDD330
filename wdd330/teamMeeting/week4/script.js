@@ -76,6 +76,7 @@ function checkWin() {
     ) {
         document.querySelector("h2").innerHTML = `Player X has won!`;
         document.querySelector("h3").classList.add("no_display");
+        setTimeout(() => {  reset(); }, 3000);
         return;
     } else if (
         (win1.textContent.includes("O") &&
@@ -105,6 +106,7 @@ function checkWin() {
     ) {
         document.querySelector("h2").innerHTML = `Player O has won!`;
         document.querySelector("h3").classList.add("no_display");
+        setTimeout(() => {  reset(); }, 3000);
         return;
     } else {
         isDraw();
@@ -122,6 +124,7 @@ function isDraw() {
             if (count == 81) {
                 document.querySelector("h2").innerHTML = `It's a draw`;
                 document.querySelector("h3").classList.add("no_display");
+                setTimeout(() => {  reset(); }, 3000);
             }
         }
     }
