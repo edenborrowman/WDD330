@@ -9,15 +9,36 @@
 <body>
     <div id="error"></div>
     <form id="form">
-        <div>
+        <!-- <div>
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required>            
-        </div>
+        </div> -->
         <div>
+            <label for="name">
+                Name <input type="text" id="name" name="user_name">
+              </label>           
+        </div>
+        <!-- <div>
             <label for="password">Password</label>
             <input id="password" name="password" type="password">     
         </div>
+        <div>
+            <label for="verify">Re-enter Password</label>
+            <input id="verify" name=verify type="password">     
+        </div> -->
+        <div>
+            <label for="password">
+                Password <input type="password" id="password" name="user_password">
+              </label>     
+        </div>
+        <div>
+            <label for="verify">
+                Password <input type="password" id="verify" name="user_password_verify">
+              </label>         
+        </div>
         <button type="submit">Submit</button>
+        <p>Buttons seem like they should all be the same. I mean, isn't a button a button?</p><br><br>
+        <p>It turns out the answer is "no." Button written as input &lt;type="button"&gt; is used for creating buttons in a form. Inside a regular &lt;button&gt; tag, you can place text or images, but with the input button, it's designed to automatically submit a form. They sound the same on the surface but do something differnt in reality. </p>
     </form>
     <script src="script.js"></script>
 </body>
