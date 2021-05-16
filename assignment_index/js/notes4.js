@@ -43,4 +43,24 @@ var name2 = new String('ryu');
 console.log(name2);
 
 
+//This kind of code is "spaghetti code" and wouldn't you know it...I'm great at making Spaghetti (and I'm not even Italian!)
 
+//Create User 1
+// 
+//A better way to code. Object Literals.
+
+
+
+//This is encapsulation--storing everything about what it means to be a user in this capsule.
+var userOne = {
+    email: 'ryu@ninjas.com',
+    name: 'Ryu',
+    login(){
+        console.log(this.email, 'has logged in');
+        },
+    logout(){
+        console.log(this.email, 'has logged out');
+    }
+};
+
+console.log(userOne.name)
