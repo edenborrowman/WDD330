@@ -123,3 +123,5 @@ console.log(user2);
 // -creates a new empty Object.
 // -sets the value of 'this' to the new empty Object.
 // -calls the constructor method.
+
+//can have methods...
