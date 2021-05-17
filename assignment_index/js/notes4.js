@@ -64,3 +64,45 @@ var userOne = {
 };
 
 console.log(userOne.name)
+
+//UPDATING PROPERTIES ON OBJECTS
+
+userOne.name = "Yoshi"
+console.log(userOne.name);
+
+//can also use [] to access info in objects
+
+userOne['email'] //note, must be in a string
+console.log(userOne.email);
+
+//Can also update properties with [] notation:
+
+userOne['name'] = 'Grandma Riding Hood';
+console.log(userOne.name);
+
+// this way of accesing the property is useful if the content is dynamic, not set in stone:
+
+var prop = 'name';
+console.log(prop);
+
+userOne[prop];
+console.log(userOne[prop]);
+
+//when "prop" changes it works with [], but this won't work with . notation.
+
+var prop = 'email';
+console.log(userOne[prop]); //works
+console.log(userOne.prop); //doesn't
+
+//Adding info to the object. Sweet!
+userOne.age = 25;
+console.log(userOne.age);
+
+//adding methods to the object
+userOne.logInfo = function(){};
+//but this gets messy. Better to keep inside object literal definition if you can! Eveything can be seen together that way.
+
+//What about if you have multiple users?
+//Repeating object over and over gets messy. Since these are all the same kind of object with same keys, we can use classes...
+
+var userFour = new userOne();
