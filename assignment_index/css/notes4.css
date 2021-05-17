@@ -4,3 +4,7 @@ h1 {
   font-family: "Trebuchet MS";
   margin: 60px auto;
 }
+
+img {
+  width: 300px;
+}
