@@ -105,4 +105,21 @@ userOne.logInfo = function(){};
 //What about if you have multiple users?
 //Repeating object over and over gets messy. Since these are all the same kind of object with same keys, we can use classes...
 
-var userFour = new userOne();
+//declare class. Convention says use capital letter here ("User")
+
+class User { 
+    constructor(email, name) { //the function that fires when we create a new user object. This comes first.
+        this.email = email;
+        this.name = name;
+    }
+}
+
+var user1 = new User('ryu@ninjas.com', 'Ryu');
+console.log(user1);
+var user2 = new User('yoshi@mariocorp.com', 'Yoshi');
+console.log(user2);
+
+//new keyword:
+// -creates a new empty Object.
+// -sets the value of 'this' to the new empty Object.
+// -calls the constructor method.
