@@ -40,6 +40,8 @@ const hikeList = [
 
   const hikeListElement = document.getElementById("hikes");
 
+  const fullDetails = document.getElementById("mouseover");
+
   const hikeObject = new Hikes();
 
  //on load grab the array and insert it into the page
@@ -47,5 +49,5 @@ const hikeList = [
     hikeObject.showHikeList(hikeList, hikeListElement);
   });
 
-  
+
 

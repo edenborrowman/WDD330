@@ -35,4 +35,10 @@ h2 {
     display: none;
 }
 
+#mouseover{
+    position: absolute;
+    background-color:lightblue;
+    padding: 2%;
+    color: navy;
+}
 
