@@ -38,7 +38,7 @@ export default class Hikes {
       });
     });
   }
-
+  //CHANGE CLASS WHEN MOUSE IS REMOVED
   // setImageEventListener(hikes) {
   //   hikes.forEach(hike => {
   //     document.getElementById(hike.id).addEventListener(
