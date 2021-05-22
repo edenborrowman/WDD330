@@ -2,7 +2,7 @@ let links = [
     {
         label: "Week 1",
         notes: "Notes and Examples",
-        url: "/assignment_index/notes1.html"
+        url: "https://edenborrowman.github.io/WDD330/wdd330/assignment_index/notes1.html"
     },
 
     {
