@@ -2,8 +2,7 @@ let links = [
     {
         label: "Week 1",
         notes: "Notes and Examples",
-        url: "
-        /assignment_index/notes1.html"
+        url: "/assignment_index/notes1.html"
     },
 
     {
