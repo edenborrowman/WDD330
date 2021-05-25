@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.mobile {
+    width: 300px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color:white;
+    width: 100%;
+    min-height: 100%;
+}
+
+#back_pic {
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5% auto; 
+    margin-top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    min-height: 80vh;
+    min-width: 400px;
+  }
+
+body {
+    padding: 20px;
+   
+    }
+
+section{
+    background-color: rgba(108, 122, 137, .25);
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.listContainer, .newItemEntry {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 100%;
+    max-width: 800px;    
+    z-index: -1;
+    padding: 0;
+}
+.button{
+    width: 15%;
+    min-width: 48px;
+    min-height: 48px;
+    color: white;
+    border: 2px solid #000;
+    border-radius: 10px;
+    outline: none;
+}
+.button:hover {
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus{
+    filter: brightness(120%);
+    box-shadow: 4px 2px 5px black;
+}
+.newItemEntry{
+    position: sticky;
+    top: 0;
+    margin-bottom: 1 rem;
+    padding: 0.75rem;
+}
+
+form{
+     display: flex;
+    justify-content: space-between;
+        }
+
+#newItemLabel {
+    position: absolute;
+    left: -1000000px;
+}
+
+input[type="text"] {
+    width: 80%;
+    font-size: 1.25rem;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0.75rem;
+    outline: none;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+    box-shadow: 4px 2px 5px black;
+}
+
+button#addItem{
+    font-size: 1.25rem;
+    background-color: rgba(0, 128, 0, .5);
+    padding: 0.75rem;
+    border: none;
+}
+
+.listContainer {
+    min-height: 60vh;
+    max-height: 66vh;
+    padding: 0.75rem;
+    }
+.listTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+button#clearItems {
+    font-size: 1rem;
+    background-color:rgba(255, 0, 0, .5);
+    padding: 0 0.1rem;
+    margin-bottom: 0.5rem;
+    border: none;
+}
+
+hr {
+    width: 100%;
+}
+.item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+input[type="checkbox"]{
+    text-align: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    min-width: 48px;
+    min-height: 48px;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+
+input[type="checkbox"]:hover{
+box-shadow: 4px 2px 5px black;
+}
+
+input[type="checkbox"]:hover + label{
+    text-decoration: underline;
+    } 
+label{
+    font-size: 1.1rem;
+}
+
+div.motivate_button{
+    text-align: center;
+}
+
+button#motivate {
+    font-size: 1rem;
+    background-color:rgba(108, 122, 137, .5);
+    color: white;
+    padding: .75rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    border-radius: 10px;
+    margin: auto;
+    border: none;
+    
+
+}
+
+button#motivate:hover, button#motivate:focus{
+    filter: brightness(120%);
+    box-shadow: 4px 2px 5px black;
+
+}

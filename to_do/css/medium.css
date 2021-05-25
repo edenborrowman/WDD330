@@ -1,0 +1,17 @@
+@media only screen and (min-width: 35rem){
+
+html, body {
+    font-size: 22px   
+}
+.fullback {
+    max-width: 35rem;
+}
+
+button#addItem{
+    font-size: 1.5rem;
+}
+
+button#clearItems {
+    padding: 0 0.5rem;
+}
+}
