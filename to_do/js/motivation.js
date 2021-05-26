@@ -98,7 +98,7 @@ var md_quote_pic = motiv_info[Math.floor(Math.random()*10)].image3;
 var random_quote = motiv_info[Math.floor(Math.random()*10)].quote;
 
 
-document.querySelector('#quote').innerHTML = random_quote;
+document.querySelector('#qt').textContent = random_quote;
 
 document.querySelector('#src1').srcset.innerHTML = sm_quote_pic;
 document.querySelector('#src2').srcset.innerHTML = md_quote_pic;

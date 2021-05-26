@@ -16,6 +16,8 @@ html, body {
     color:white;
     width: 100%;
     min-height: 100%;
+    max-width: 800px;
+    margin: auto;
 }
 
 #back_pic {
@@ -30,7 +32,40 @@ html, body {
     z-index: -1;
     min-height: 80vh;
     min-width: 400px;
+}
+
+  nav {
+    background-color: gold;
   }
+  
+  nav button {
+    margin: 0.2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #2a3640;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem 2%;
+    color: black;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #99b4bf;
+  }
+  
+  nav ul li.active a {
+    background-color: rgba(153, 180, 191, 0.5);
+    color: white;
+  }
+  
 
 body {
     padding: 20px;
@@ -38,7 +73,7 @@ body {
     }
 
 section{
-    background-color: rgba(108, 122, 137, .25);
+    /* background-color: rgba(255, 255, 255, 0.25); */
     width: 90%;
     max-width: 700px;
     margin: auto;
@@ -125,7 +160,7 @@ button#addItem{
 
 button#clearItems {
     font-size: 1rem;
-    background-color:rgba(255, 0, 0, .5);
+    background-color:rgb(218, 16, 16);;
     padding: 0 0.1rem;
     margin-bottom: 0.5rem;
     border: none;
@@ -153,29 +188,41 @@ input[type="checkbox"]{
 
 input[type="checkbox"]:hover{
 box-shadow: 4px 2px 5px black;
+transition: .3s ease;
 }
 
 input[type="checkbox"]:hover + label{
     text-decoration: underline;
+    transition: .3s ease;
     } 
 label{
     font-size: 1.1rem;
 }
 
-div.motivate_button{
-    text-align: center;
+div.motivate_button{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+   
+    
 }
 
-button#motivate {
+button.motivate {
+    
     font-size: 1rem;
-    background-color:rgba(108, 122, 137, .5);
-    color: white;
-    padding: .75rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    background-color:gold;
+    color: black;
+    padding:.5rem;
+    margin-left: .75rem;
+    margin-right: .75rem;
+    width: 150px;
     border-radius: 10px;
-    margin: auto;
     border: none;
+    align-items: justify;
     
 
 }
@@ -183,5 +230,160 @@ button#motivate {
 button#motivate:hover, button#motivate:focus{
     filter: brightness(120%);
     box-shadow: 4px 2px 5px black;
+    transition: .3s ease;
 
 }
+
+#qt{
+    color: black;
+}
+
+
+#header_1 {
+   font-family: 'Pacifico', cursive;
+   color: black;
+   font-size: 3rem;
+   text-align: center;
+}
+#header_2 {
+    color: black;
+    text-align: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.sky {
+    background-color: rgb(109, 200, 253);
+    max-width: 800px;
+    margin: auto;
+}
+
+#bizzy {
+    margin-top: 10%;
+    max-width: 15rem;
+    z-index: 0;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.home_but{
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    }
+a{
+    text-decoration: none;
+}
+
+button.home_but:hover, button#motivate:focus{
+    filter: brightness(120%);
+    box-shadow: 4px 2px 5px black;
+    transition: .3s ease;
+}
+
+    /* pomodoro timer styling */
+.pom_title {
+     font-size: 2rem;
+     padding: 1rem;
+     color: black;
+     font-family: "Pacifico", script;
+     text-align: center;
+    }
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      
+    }
+
+ .pom_button{
+     padding: .5rem;
+     background-color: gold;
+     border: none;
+     margin-left: 1rem;
+     margin-right: 1rem;
+     margin-bottom: 5rem;
+     cursor: pointer;
+ }
+
+ .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+ }
+
+ button.pom_button:hover, button#motivate:focus{
+    filter: brightness(120%);
+    box-shadow: 4px 2px 5px black;
+    display: inline-block;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#buzzy_2{    
+    max-width: 250px;
+    }
+.clock{
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 15rem;
+    border: 5px solid black;
+    border-radius: 10rem;
+    
+}
+.clock_face {
+    display: inline-block;
+    color: black;
+    padding: .5rem;
+    font-size: 2rem;
+ }
+.show_massage{
+    display: block;
+    padding: 1rem 0;
+    color: black;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+.break_msg {
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem auto;
+    color: rgb(218, 16, 16);
+}
+.hide{
+    display: none;
+}
+

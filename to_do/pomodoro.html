@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Pacifico&display=swap');
+    </style>
+</head>
+
+<body onload="template()">
+    <main class="sky">
+    <div class="cont">
+        <h1 class="pom_title">Pomodoro Timer</h1>
+         <div class="clock">
+            <span>
+                <h4 class="clock_face" id="minutes"></h4>
+            </span>
+            <span>
+                <h4 class="clock_face">:</h4>
+            </span>
+            <span>
+                <h4 class="clock_face" id="seconds"></h4>
+            </span>            
+        </div>
+        <div class="buzzy">
+            <img id="buzzy_2" src="images/buzzy_2.svg" alt="Bizzy the Productivity Bee">
+        </div> 
+                  
+    </div>
+    <div class="break_msg"><h3 id=done></h3></div>
+    <div>
+        <div class='container'>
+            <button class="pom_button" onclick="start()"><i class="material-icons" style="font-size: 01.5rem;">play_circle_outline</i></button>
+            <!-- <button class="pom_button"><i class="material-icons" style="font-size: 01.5rem;">pause_circle_outline</i></button> -->
+            <button class="pom_button" onclick="reset()"><i class="material-icons" style="font-size: 01.5rem;">replay</i></button>
+
+
+        </div>
+    </div>
+
+    </main>
+    <script src="js/pomodoro.js"></script>
+</body>
+
+</html>
+

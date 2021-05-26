@@ -11,8 +11,27 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    <main>
-        <div id="background_pic">
+    <header>
+        <nav id="header_nav">
+            <button onclick="toggleMenu()">☰</button>
+            <ul id="primaryNav" class="hide">
+                <li><section class="newItemEntry">
+                    <form id="itemEntryForm">
+                        <label for="newItem" id="newItemLabel">Enter A New To Do Item</label>
+                        <input id="newItem" type="text" size='40' autocomplete="off" placeholder="Add New Item" tabindex="0"/>
+                        <button id="addItem" class="button" title="Add New Item" aria-label="Add New Item To List" tabindex="0">+</button>
+                    </form>
+                </section></li>
+                <li><a href="https://edenborrowman.github.io/assignments/lesson-10/preston-10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="https://edenborrowman.github.io/assignments/lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://edenborrowman.github.io/assignments/gallery-7/gallery-7.html">Gallery</a></li>
+              </ul>
+        </nav>
+    </header>
+    <main class="sky">
+        <!-- <div id="background_pic">
             <picture>  
                 <source id="src1"
                 media="(max-width: 400px)"
@@ -30,18 +49,18 @@
                 loading="lazy"
                 src="images/motiv_1_1200.jpg"
                 alt="scenic sunset"
-               />                
+               />                 -->
 
 
            
         
-        <section class="newItemEntry">
+        <!-- <section class="newItemEntry">
             <form id="itemEntryForm">
                 <label for="newItem" id="newItemLabel">Enter A New To Do Item</label>
                 <input id="newItem" type="text" size='40' autocomplete="off" placeholder="Add New Item" tabindex="0"/>
                 <button id="addItem" class="button" title="Add New Item" aria-label="Add New Item To List" tabindex="0">+</button>
             </form>
-        </section>
+        </section> -->
 
         <section class="listContainer">
             <div class="listTitle">
@@ -61,7 +80,10 @@
             </div>
         </section>
     </div>
-    <div class="motivate_button"><button id="motivate">Motivation</button>
+    <div class="motivate_button"><button class="motivate">New Task</button>   
+        <button class="motivate">Sort</button>
+        <button class="motivate">Motivate</button>
+    
     </div>
     </main>
  
