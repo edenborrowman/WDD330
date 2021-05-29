@@ -25,7 +25,7 @@
         <nav id="header_nav">
             <button onclick="toggleMenu()">☰</button>
             <ul id="primaryNav" class="hide">
-                
+
                 <li><a href="index.html">Home</a></li>
                 <li><a href="motivation.html">Motivation</a></li>
                 <li><a href="pomodoro.html">Pomodoro Timer</a></li>
@@ -33,38 +33,34 @@
         </nav>
     </header>
     <main class="sky">
-          <section class="listContainer">
+        <section class="listContainer">
             <div class="listTitle">
                 <img id="buzzy_3" src="images/buzzy_3.svg" alt="buzzy bee mascot">
                 <h1 class="title">To Do List</h1>
 
             </div>
-                <hr class="line" />
+            <hr class="line" />
             <div id="listItems">
             </div>
         </section>
         <div id="peaches" class="hide">
-        <section class="newItemEntry">
-            <form id="itemEntryForm">
-                <label for="newItem" id="newItemLabel">Enter A New To Do Item</label>
-                <input id="newItem" type="text" size='40' autocomplete="off" placeholder="Add New Item"
-                    tabindex="0" />
-                <button id="addItem" class="button" title="Add New Item" aria-label="Add New Item To List"
-                    tabindex="0" onclick="toggleTaskList()">+</button>
-            </form>
-        </section>
-    </div>
+            <section class="newItemEntry">
+                <form id="itemEntryForm">
+                    <label for="newItem" id="newItemLabel">Enter A New To Do Item</label>
+                    <input id="newItem" type="text" size='40' autocomplete="off" placeholder="Add New Item"
+                        tabindex="0" />
+                    <button id="addItem" class="button" title="Add New Item" aria-label="Add New Item To List"
+                        tabindex="0" onclick="toggleTaskList()">+</button>
+                </form>
+            </section>
         </div>
         <div id="button_div">
-            <button id="openTaskList" class="button" title="Add New Item" aria-label="New Task" onclick="toggleTaskList()"
-                tabindex="0">New</button>
+            <button id="openTaskList" class="button" title="Add New Item" aria-label="New Task"
+                onclick="toggleTaskList()" tabindex="0">New</button>
             <button id="clearItems" class="button" title="Clear The List" aria-label="Remove all items from the list"
                 tabindex="0">Clear</button>
-            <button id="sort" class="button" title="Sort items" aria-label="Sort items on to do list"
-                tabindex="0"><a href="index.html">Home</a></button>
-                
-        </div>
-
+                <a href="index.html"><button id="sort" class="button" title="Sort items" aria-label="Sort items on to do list" tabindex="0"><a
+                    href="index.html">Home</button></a>
         </div>
     </main>
 
