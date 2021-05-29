@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a to-do list app to help busy people manage their lives">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Pacifico&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="header_nav">
+            <button onclick="toggleMenu()">☰</button>
+            <ul id="primaryNav" class="hide">
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="motivation.html">Motivation</a></li>
+                <li><a href="pomodoro.html">Pomodoro Timer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="sky">
+          <section class="listContainer">
+            <div class="listTitle">
+                <img id="buzzy_3" src="images/buzzy_3.svg" alt="buzzy bee mascot">
+                <h1 class="title">To Do List</h1>
+
+            </div>
+                <hr class="line" />
+            <div id="listItems">
+            </div>
+        </section>
+        <div id="peaches" class="hide">
+        <section class="newItemEntry">
+            <form id="itemEntryForm">
+                <label for="newItem" id="newItemLabel">Enter A New To Do Item</label>
+                <input id="newItem" type="text" size='40' autocomplete="off" placeholder="Add New Item"
+                    tabindex="0" />
+                <button id="addItem" class="button" title="Add New Item" aria-label="Add New Item To List"
+                    tabindex="0" onclick="toggleTaskList()">+</button>
+            </form>
+        </section>
+    </div>
+        </div>
+        <div id="button_div">
+            <button id="openTaskList" class="button" title="Add New Item" aria-label="New Task" onclick="toggleTaskList()"
+                tabindex="0">New</button>
+            <button id="clearItems" class="button" title="Clear The List" aria-label="Remove all items from the list"
+                tabindex="0">Clear</button>
+            <button id="sort" class="button" title="Sort items" aria-label="Sort items on to do list"
+                tabindex="0"><a href="index.html">Home</a></button>
+                
+        </div>
+
+        </div>
+    </main>
+
+    <script src="js/main.js" type="module"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

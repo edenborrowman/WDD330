@@ -8,15 +8,32 @@
       name="motivational quotes"
       content="Quotes to inspire action"
     />
+    <meta name="description" content="This page will help you reach your goals with inspirational quotes and images"/>
     <title>motivation</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body>
+  <header>
+    <nav id="header_nav">
+        <button onclick="toggleMenu()">☰</button>
+        <ul id="primaryNav" class="hide">
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="to_do.html">To Do List</a></li>
+            <li><a href="pomodoro.html">Pomodoro Timer</a></li>
+        </ul>
+    </nav>
+</header>
     <main>
-        <div class="full_back">
+      <div id="main_motivation_div">
+        <div class="bee_pic">
             <picture>  
                 <source id="src1"
                 media="(max-width: 400px)"
@@ -33,13 +50,14 @@
               <img id="quote_pic"
                 loading="lazy"
                 src=""
-                alt=""
+                alt="A serent bee picture"
                />    
-               <div id="qt_div"><p id="qt"></p></div>
-                
+               <div id="qt_div"><p id="qt"></p></div>                
         </div>
+      </div>
 
 
     <script src="js/motivation.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

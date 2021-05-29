@@ -19,19 +19,30 @@ html, body {
     max-width: 800px;
     margin: auto;
 }
+.bee_pic{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 
-#back_pic {
-    position: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 5% auto; 
-    margin-top: 0;
-    left: 0;
-    right: 0;
+}
+#quote_pic {    
     z-index: -1;
-    min-height: 80vh;
-    min-width: 400px;
+    
+}
+
+#qt_div {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 80%;
+}
+
+#qt{
+    background-color:rgba(255, 255, 255, 0.6);
+    color: black;
 }
 
   nav {
@@ -47,30 +58,37 @@ html, body {
   }
   
   nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style: none;  
+    
+  }
+  nav ul li {
+      color: black;
+      
   }
   
   nav ul li a {
     display: block;
     text-decoration: none;
-    padding: 0.8rem 2%;
+    padding: 5%;     
     color: black;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
-    background-color: #99b4bf;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);    
   }
-  
-  nav ul li.active a {
-    background-color: rgba(153, 180, 191, 0.5);
-    color: white;
-  }
-  
 
+  nav ul li a:hover {
+      background-color:rgba(255, 255, 255, 0.5);
+      color: rgb(109, 200, 253);
+      font-weight: bold;
+  }
+  
 body {
     padding: 20px;
    
     }
+
+.title {
+    font-family: "Pacifico", script;
+    color: black;
+}
 
 section{
     /* background-color: rgba(255, 255, 255, 0.25); */
@@ -92,13 +110,15 @@ img {
     padding: 0;
 }
 .button{
-    width: 15%;
-    min-width: 48px;
-    min-height: 48px;
-    color: white;
-    border: 2px solid #000;
-    border-radius: 10px;
-    outline: none;
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    
 }
 .button:hover {
     cursor: pointer;
@@ -143,9 +163,23 @@ input[type="text"]:focus {
 button#addItem{
     font-size: 1.25rem;
     background-color: rgba(0, 128, 0, .5);
-    padding: 0.75rem;
+    padding: 0 0.1rem;
     border: none;
 }
+
+button#openTaskList{
+    font-size: 1.25rem;
+    background-color: rgba(0, 128, 0, .5);
+    padding: 0 0.1rem;
+    border: none;
+}
+button#sort {
+    font-size: 1.25rem;
+        background-color: gold;
+        padding: 0 0.1rem;
+        margin-bottom: 0.5rem;
+        border: none;
+    }
 
 .listContainer {
     min-height: 60vh;
@@ -154,20 +188,21 @@ button#addItem{
     }
 .listTitle{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 button#clearItems {
-    font-size: 1rem;
+    font-size: 1.25rem;
     background-color:rgb(218, 16, 16);;
     padding: 0 0.1rem;
     margin-bottom: 0.5rem;
     border: none;
 }
 
-hr {
+hr.line {
     width: 100%;
+    border-top: 2 px solid white;
 }
 .item{
     display: flex;
@@ -184,6 +219,8 @@ input[type="checkbox"]{
     min-height: 48px;
     cursor: pointer;
     margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    
 }
 
 input[type="checkbox"]:hover{
@@ -195,47 +232,30 @@ input[type="checkbox"]:hover + label{
     text-decoration: underline;
     transition: .3s ease;
     } 
-label{
-    font-size: 1.1rem;
+label{ 
+    font-size: 1.1rem;  
+    color: black;
+    font-weight: bold;   
 }
 
-div.motivate_button{    
+#button_div {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-left: 2%;
-    margin-right: 2%;
-    
-   
+    justify-content:center;
+    align-items:baseline;
+    max-width: 100%;
+    margin: auto;
+    background-color: white;
+    padding-top: 5%;
+    border: 1px solid black;
     
 }
 
-button.motivate {
-    
-    font-size: 1rem;
-    background-color:gold;
-    color: black;
-    padding:.5rem;
-    margin-left: .75rem;
-    margin-right: .75rem;
-    width: 150px;
-    border-radius: 10px;
-    border: none;
-    align-items: justify;
-    
-
-}
-
-button#motivate:hover, button#motivate:focus{
-    filter: brightness(120%);
-    box-shadow: 4px 2px 5px black;
-    transition: .3s ease;
-
-}
-
-#qt{
-    color: black;
+.newItemEntry{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 90%;
+    border-radius: 0;
+    padding: 5%;
+    box-shadow: 2px 2px 5px black;
 }
 
 
@@ -252,6 +272,7 @@ button#motivate:hover, button#motivate:focus{
 
 #buttons {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 200px;
@@ -278,14 +299,9 @@ button#motivate:hover, button#motivate:focus{
     z-index: 0;
 }
 
-#buttons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
 
-}
+
+
 .home_but{
     background-color: gold;
     width: 100px;
@@ -298,7 +314,10 @@ button#motivate:hover, button#motivate:focus{
     }
 a{
     text-decoration: none;
+    color: black;
 }
+
+
 
 button.home_but:hover, button#motivate:focus{
     filter: brightness(120%);
@@ -314,6 +333,12 @@ button.home_but:hover, button#motivate:focus{
      font-family: "Pacifico", script;
      text-align: center;
     }
+.pom_descripton{
+    max-width:80%;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: .75rem;
+}
 .cont{
     display: flex;
     flex-direction: column;
@@ -338,6 +363,7 @@ button.home_but:hover, button#motivate:focus{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    margin-bottom: -5rem;
 
  }
 
@@ -352,13 +378,20 @@ button.home_but:hover, button#motivate:focus{
 #buzzy_2{    
     max-width: 250px;
     }
+
+    img#buzzy_3 {
+        display: inline;
+        max-width: 80px;
+        z-index: 0;
+        margin-right: 5%;
+    }
 .clock{
     display: flex;
   
     align-items: center;
     justify-content: center;
     width: 15rem;
-    height: 15rem;
+    height: 5rem;
     border: 5px solid black;
     border-radius: 10rem;
     
@@ -380,7 +413,7 @@ button.home_but:hover, button#motivate:focus{
 .break_msg {
     padding: 1rem;
     text-align: center;
-    margin-top: 1rem auto;
+    margin: 10px auto;
     color: rgb(218, 16, 16);
 }
 .hide{

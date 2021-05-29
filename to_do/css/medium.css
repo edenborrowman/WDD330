@@ -7,9 +7,9 @@ html, body {
     max-width: 35rem;
 }
 
-button#addItem{
+/* button#addItem{
     font-size: 1.5rem;
-}
+} */
 
 button#clearItems {
     padding: 0 0.5rem;
