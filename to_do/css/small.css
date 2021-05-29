@@ -116,6 +116,9 @@ img {
     border-radius: 100px;
     border: none;
     cursor: pointer;
+    line-height: 100px;
+}
+   
     
 }
 .button:hover {
@@ -170,6 +173,16 @@ button#openTaskList:focus {
     box-shadow: 4px 2px 5px black;
     transition: .3s ease;
     outline-width: 0;    
+}
+
+a.button {
+    position: relative;
+    font-size: 1.25rem;
+    background-color: orange;
+    text-align: center;
+    vertical-align: middle;
+  
+   
 }
 
 button:focus {
