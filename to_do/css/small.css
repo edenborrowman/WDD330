@@ -117,11 +117,9 @@ img {
     border: none;
     cursor: pointer;
     line-height: 100px;
-    color: white;
+    color: black;
 }
-   
-    
-}
+
 .button:hover {
     cursor: pointer;
 }
@@ -170,19 +168,19 @@ button#openTaskList{
     border: none;
 }
 button#openTaskList:focus {
-    filter: brightness(140%);
-    box-shadow: 4px 2px 5px black;
+    box-shadow: 5px 3px 6px black;
     transition: .3s ease;
     outline-width: 0;    
+    color: white;
 }
 
 a.button {
     position: relative;
-    font-size: 1.25rem;
-    background-color: orange;
+    font-size: 1rem;
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
+    color: black;
   
    
 }
@@ -219,6 +217,7 @@ button#clearItems {
 
 hr.line {
     width: 100%;
+    
 }
 .item{
     display: flex;
