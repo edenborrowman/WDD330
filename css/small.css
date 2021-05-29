@@ -25,13 +25,8 @@ body {
     font-size: 5rem;
   }
 
-  .headline_style_2 {
-    font-size: 2rem;
-  }
- 
   ul,
   li {
-    font-family: 'Amatic SC', 'Poppins', 'Helvetica', sans-serif;
     color: #287a97;
     font-weight: bold;
   }
@@ -63,7 +58,7 @@ body {
   }
 
   footer a:visited {
-    color: rgb(250, 199, 104);
+    color: rgb(250, 199, 104)
   }
  
   

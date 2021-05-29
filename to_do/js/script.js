@@ -11,3 +11,4 @@ function toggleMenu() {
   const entryFocus = () => {
     document.getElementById("newItem").focus();
 }
+
