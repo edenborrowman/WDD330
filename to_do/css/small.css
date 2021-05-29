@@ -118,6 +118,8 @@ img {
     cursor: pointer;
     line-height: 100px;
     color: black;
+    min-width: 50px;
+    
 }
 
 .button:hover {
@@ -253,6 +255,11 @@ label{
     font-weight: bold;   
 }
 
+#dashed {
+    z-index: 1;
+    position: relative;
+}
+
 #button_div {
     display: flex;
     justify-content:center;
@@ -262,6 +269,7 @@ label{
     background-color: white;
     padding-top: 5%;
     border: 1px solid black;
+    padding: 5%;
     
 }
 
@@ -309,9 +317,10 @@ label{
 }
 
 #bizzy {
-    margin-top: 10%;
+    /* margin-top: 10%; */
     max-width: 15rem;
     z-index: 0;
+    
 }
 
 a{

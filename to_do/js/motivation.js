@@ -107,3 +107,6 @@ document.querySelector('#src3').srcset = random_quote_pic;
 document.querySelector('#quote_pic').src = random_quote_pic;
 
 
+function refreshThePage() {
+    location = location;
+}
