@@ -17,7 +17,7 @@ export default class ToDoList{
 
     removeItemFromList(id) {
         const list = this._list;
-        for (let i = 0; i > list.length; i++){
+        for (let i = 0; i < list.length; i++){
             if(list[i]._id == id){
                 list.splice(i, 1);
                 break;

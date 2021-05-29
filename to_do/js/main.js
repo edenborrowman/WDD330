@@ -50,6 +50,7 @@ const refreshThePage = () => {
     clearListDisplay();
     renderList();
     clearItemEntryField();
+    setFocusOnOpenTaskList();
     setFocusOnItemEntry();
 }
 
@@ -108,9 +109,14 @@ const clearItemEntryField = () => {
     document.getElementById("newItem").value = "";
 };
 
+const setFocusOnOpenTaskList = () => {
+    document.getElementById("openTaskList").focus();
+};
+
 const setFocusOnItemEntry = () => {
     document.getElementById("newItem").focus();
 };
+
 
 const processSubmission = () => {
     const newEntryText = getNewEntry();

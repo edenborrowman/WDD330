@@ -173,6 +173,16 @@ button#openTaskList{
     padding: 0 0.1rem;
     border: none;
 }
+button#openTaskList:focus {
+    filter: brightness(140%);
+    box-shadow: 4px 2px 5px black;
+    transition: .3s ease;
+    outline-width: 0;    
+}
+
+button:focus {
+    color: white;
+}
 button#sort {
     font-size: 1.25rem;
         background-color: gold;
@@ -299,19 +309,6 @@ label{
     z-index: 0;
 }
 
-
-
-
-.home_but{
-    background-color: gold;
-    width: 100px;
-    height: 100px;
-    margin-left: .5rem;
-    margin-right: .5rem;
-    border-radius: 100px;
-    border: none;
-    cursor: pointer;
-    }
 a{
     text-decoration: none;
     color: black;
