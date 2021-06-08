@@ -93,10 +93,6 @@ section {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
-
-  footer {
-    font-size: 1rem;
-  }
 }
 
 @media only screen and (min-width: 64rem) {
@@ -118,7 +114,4 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  footer {
-    font-size: 1.2rem;
-  }
-}
+ }
