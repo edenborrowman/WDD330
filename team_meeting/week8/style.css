@@ -32,6 +32,9 @@ section {
 section:hover, button:hover {
   cursor: pointer;
 }
+button:active {
+  transform: scale(.85);
+}
 
 .hide {
   display: none;
