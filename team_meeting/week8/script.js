@@ -89,10 +89,6 @@ for(let i=0; i < starwars.length; i++) {
 });}
 
 fetch_info(requestURL);
- 
-function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("hide");
-  };
 
 function toggleHide(info_div){
     info_div.classList.toggle('hide');

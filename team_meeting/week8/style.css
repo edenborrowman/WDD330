@@ -28,39 +28,9 @@ html, body {
 section {
   padding: 3%;
 }
-/*Nav Styling*/
 
-nav {
-  background-color: gold;
-}
-
-nav button {
-  margin: 0.2rem 2%;
-  background-color: transparent;
-  border: none;
-  font-size: 1.6rem;
-  color: #2a3640;
-}
-
-nav ul {
-  list-style: none;
-}
-nav ul li {
-  color: #2a3640;
-}
-nav ul li a:hover {
-  background-color: gold;
-  color: #2a3640;
-  font-weight: bold;
-}
-
-nav ul li a {
-  display: block;
-  text-decoration: none;
-  padding: 2%;
-  color: gold;
-  background-color: #2a3640;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
+section:hover, button:hover {
+  cursor: pointer;
 }
 
 .hide {
