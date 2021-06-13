@@ -58,3 +58,16 @@ body {
     text-align: center;
   }
 
+  .myCanvas{
+    border: dotted 2px black;
+  }
+
+  .myCanvas3 {
+    border: dotted 2px black;
+    margin: 0 20px;
+}
+.spin {
+  position: absolute;
+  top: 8px;
+  left: 55px;
+}
