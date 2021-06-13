@@ -1,37 +1,37 @@
 let links = [
     {
-        label: "Week 1",
+        label: "Week 1: April 18 - April 24",
         notes: "Notes and Examples",
-        url: "https://edenborrowman.github.io/WDD330/wdd330/assignment_index/notes1.html",
+        url: "notes1.html",
         group: "no group this week",
         assignment: "no assignment this week"
     },
 
     {
-        label: "Week 2",
+        label: "Week 2: April 25 - May 1",
         notes: "Notes and Examples",
-        url: "https://edenborrowman.github.io/WDD330/wdd330/assignment_index/notes2.html",
+        url: "notes2.html",
         group: "Weekly Group Assignment",
-        teamUrl: "https://edenborrowman.github.io/WDD330/wdd330/teamMeeting/week2.html",
+        teamUrl: "team_meeting/week2.html",
         assignment: "no assignment this week"
 
     },
     {
-        label: "Week 3",
+        label: "Week 3: May 2 - May 8",
         notes: "Notes and Examples",
-        url: "https://edenborrowman.github.io/WDD330/wdd330/assignment_index/notes3.html",
+        url: "notes3.html",
         group: "Weekly Group Assignment",
-        teamUrl: "https://edenborrowman.github.io/WDD330/wdd330/teamMeeting/week2.html",
+        teamUrl: "team_meeting/week3.html",
         assignment: "no assignment this week"
 
     },
 
     {
-        label: "Week 4",
+        label: "Week 4: May 9 - May 15",
         notes: "Notes and Examples",
         url: "notes4.html",
         group: "Weekly Group Assignment",
-        teamUrl: "team_meeting_week4",
+        teamUrl: "team_meeting/week4",
         assignment: "Form Validation Exercise",
         assignmentUrl: "form_practice"
     },
@@ -41,13 +41,14 @@ let links = [
         notes: "Notes and Examples",
         url: "notes5.html",
         group: "Weekly Group Assignment",
-        teamUrl: "team_meeting/week5/",
+        teamUrl: "team_meeting/week5",
         assignment: "no assignment this week"
     },
 
     {
         label: "Week 6: May 23 - May 29",
         notes: "no notes this week",
+        url: "no notes this week",
         group: "no group this week",
         assignment: "Midterm Productivity App",
         assignmentUrl: "to_do"
@@ -55,12 +56,22 @@ let links = [
     {
         label: "Week 7: May 30 - June 5",
         notes: "Notes and Examples",
+        url: "notes7.html",
         group: "Weekly Group Assignment",
-        teamURL: "team_meeting/hike_y/",
+        teamUrl: "team_meeting/hike_7",
         assignment: "CSS battle",
         assignmentUrl: "https://cssbattle.dev/play/21"        
     },
 
+    {
+        label: "Week 8: June 6 - June 12",
+        notes: "Notes and Examples",
+        url: "notes8.html",
+        group: "Weekly Group Assignment",
+        teamUrl: "team_meeting/week8",
+        assignment: "Report",
+        assignmentUrl: "week8report.html"        
+    },
     
 
     
@@ -79,22 +90,22 @@ for(i = 0; i<links.length; i++){
     let assignment = document.createElement('li');
 
    
-    assignment_group.textContent = links[i].label;    
-    notes.textContent= links[i].notes;    
-    team.textContent= links[i].group;       
-    assignment.textContent= links[i].assignment;
+    assignment_group.textContent = links[i].label;  
+    notes.innerHTML = '<a href="' + links[i].url + '">' + links[i].notes + '</a>' 
+    team.innerHTML = '<a href="' + links[i].teamUrl + '">' + links[i].group + '</a>'   
+    assignment.innerHTML = '<a href="' + links[i].assignmentUrl + '">' + links[i].assignment + '</a>'       
+    
     card.setAttribute('class', 'cards');
     work_id.setAttribute('class', 'new_entry');
     assignment_group.setAttribute('ol', 'assignment_group')
-    notes.setAttribute('href', links[i].url);
-    team.setAttribute('href', links[i].teamUrl); 
-    assignment.setAttribute('href', links[i].assignmentUrl);
+    
+   
 
     card.appendChild(assignment_group);
-    card.appendChild(work_id);
-    card.appendChild(notes);
-    card.appendChild(team);
-    card.appendChild(assignment);
+    assignment_group.appendChild(work_id); 
+    work_id.appendChild(notes);
+    work_id.appendChild(team);
+    work_id.appendChild(assignment);
    
 
     document.querySelector('div.cards').appendChild(card);

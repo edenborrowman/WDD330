@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="an index for WDD330" content="Week 8 Notes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Week 8 Notes">
+    <title>WDD 330 Week 7 notes</title>
+    <link rel="stylesheet" href="css/notes8.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+<body>
+    <header>
+      <h1 class="headline_style_1">Eden Borrowman</h1>
+      <h2 class="headline_style_2">
+        Chapter 8 Notes
+      </h2>
+    </header>
+    <main>
+        <section>
+            <h3>CSS transform property</h3>
+            <p>-Lets you translate, rotate, scale, and/or skew elements on page</p>
+            <p>-transform functions</p>
+            <p>-will be applied in the order written</p>
+            <p>-can move elements left, right, up, or down, does not affect flow of document</p>
+            <p>transform: translate(x,y)</b> moves element x from left, y from top</p>
+            <p>tranform: translateX(45px) moves on the x axis</p>
+            <p>tranform: translateY(45px) moves on the y axis</p>
+        </section>
+        <section>
+            <h3>Translation</h3>
+            <p>-Allows you to move elements left, right, up, or down.</p>
+        </section>
+        <section>
+            <h3>Scaling</h3>
+            <p>-scale(x,y) scales element horizontally then vertically. If only one number is supplied, it will apply it to both, maintaining the aspect ratio.</p>
+            <p>-example:  transform: scale(1.5, 0.25);</p>
+            <p>-Can also use just scaleX(x) or scaleY(y).</p>
+            <p>-scaled elements grow from the center (i.e. stay in the same place). You can change this with transform-origin property.</p>
+            <p>-worth noting: To declare multiple transformations, provide a space-separated list of transform functions.</p>
+            <p>-also remember, scaled elements do not impact document flow. Scaled inline-block emements will still act like block elements. Transform does not make document reflow.</p>
+        </section>
+        <section>
+            <h3>Rotation</h3>
+            <p>-rotate()</p>
+            <p>-generally declared in degrees, positive = clockwise, neg = counterclockwise</p>
+
+        <section>
+            <h3>Skew</h3>
+            <p>-skew(x,y)</p>
+            <p>-skews along the x,y axis. <i>Eden's notes and questions: why would you ever use this on text? It's a total type crime!</i></p>
+        </section>
+        <section>
+            <h3>Changing the Origin of the Transform</h3>
+            <p>-transform-origin property. Has the same syntax as the background-position property and defaults to th center of the object.</p>
+            <p>-rotate an ellipse, for example, will need this to look like a spirograph design.</p>
+        </section>
+        <section>
+            <h3>Choose your Ordering Carefully</h3>
+            <p>-order matters. Affects appearance.</p>
+        </section>
+        <section>
+            <h3>Transitions</h3>
+            <p>-Steps to create a simple transition:</p>
+            <p>1. Declare the original state of the element; the default</p>
+            <p>2. Declare the final state of your transitioned element (like a :hover state)</p>
+            <p>3. Include the transition functions in your default using propertities like transition-property, transition-duration, transition-timing-function, and transition delay</p>
+            <p>-transition property: what should be transitioned. Anything with a midpoint can be transitioned.</p>
+            <p>-properties that can be transitioned: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">Mozilla Transitions Reference Page</a></p>
+            <p>-transition-duration property: how long it will take in s or ms</p>
+            <p>-transition-timing-function property: control the pace of the transition in granular detail. I.E. start slow then speed up.</p>
+            <p>-ease, linear, ease-in, ease-out, ease-in-out. You can also define your own cubic-bezier function.</p>
+            <p>-steps function with start or end is another way to control how the transiton happens.</p>
+            <p>-Transition Delay Property: introduce a delay before the transition begins.In ms or s. Ex: a 50ms delay on mouseover of an ad, to make sure it's not accidentally triggered.</p>
+            <p>-Negative delays are possible, too. Starts transition in mid-stream.</p>
+            <p>-Transition Shorthand Property: You can combine them on one line with shorthand syntax</p>
+            <p>-Multiple Transitions: can change many things at once</p>
+        </section>
+        <section><h3>Animations</h3>
+            <p>-Unlike transitions, you control each step of tehe animation via key frames</p>
+            <p>-Keyframe: a snapshot that defines a starting or ending point of a transition. CSS annimations allow us to have many keyframes along the way, while regular transitions only have start/end keyframes.</p>
+            <p>-@keyframes rule</p>
+            <p>each keyframe looks like its own nested CSS declaration block.</p>
+            <p>-Two key terms, "from" and "to"</p>
+            <p>Inside each keyframe are the properties you want to animate, along with the animated values.</p>
+            <p>-Can be specified in any order. It's the percentage, not the order, that determines the sequence of events</p>
+            <p>-Animation properties: animation-name property is used to attach animation to an element</p>
+            <p>-animation-duration property defines length of time in s or ms—timme it takes to go from 1% to 100%</p>
+            <p>-animation-timing-funciton: ldetermines how the animation will progress over its duration. Can use ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier90, step-start, start-end, steps(number, direction).</p>
+            <p>-animation-iteration-count: lets you define how many times an animation will play. Usually integer, though decimals will let you stop animation part way through. Also can say infinite. If omitted, default is 1 (will play once).</p>
+            <p>-animation-direction: Normally goes from 0 to 100%, then jumps back to 0. REverse will make it start at 100% and move back to zero.</p>
+            <p>-animation-delay: miliseconds or seconds before it begins.</p>
+            <p>-animation-fill-mode: defines what happens after last part ends, before first part begins again. Default is none. Other options are forwards, backwards, both.</p>
+            <p>-Shorthand Animation Property: space-separated list of values for animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state</p>
+        </section>
+
+
+       </main>
+    
+    <footer>
+      &copy; <span id="currentyear"></span> Eden Borrowman | Pennsylvania |
+      <a href="https://www.byui.edu/online">BYU-I Online Learning</a> |
+      <span id="currentdate"></span><br />
+      <div class="subscript">
+        Last Modified: <span id="lastModified"></span>
+      </div>
+    </footer>
+    <script src="js/notes8.js"></script>
+  </body>
+  
+  </html>
