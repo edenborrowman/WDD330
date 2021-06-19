@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="an index for WDD330" content="Week 9 Notes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Week 9 Notes">
+    <title>WDD 330 Week 9 notes</title>
+    <link rel="stylesheet" href="css/notes8.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+<body>
+    <header>
+        <h1 class="headline_style_1">Eden Borrowman</h1>
+        <h2 class="headline_style_2">
+            Chapter 9 Notes
+        </h2>
+    </header>
+    <main>
+        <section>
+            <h3>THE data- ATTRIBUTE</h3>
+            <p> -A way of embeddng data in a web page using custom attributes ignored by the browser.</p>
+            <p> -Only meant to be used by JS.</p>
+            <p> -Format: starts with data- and only uses lowercase letters. Also includes an optional string value.</p>
+            <p> -Example: data-powers data-rating etc</p>
+            <p> -Essentially it's HTML's "jawn."</p>
+            <p> -Each element has a dataset properto to access any data- attributes it contains.</p>
+        </section>
+        <section>
+            <h3>WEB STORAGE</h3>
+            <p> -Key-value store on client's computer like cookies, but fewer restrictions, easier, and more capacity
+            </p>
+            <p> -Info is not shared with the server, doesn't expire, can usually store up to 5 gb</p>
+            <p> -Window object will have property of localStorage. Native object with several properties and methods</p>
+            <p> -Info saved as key-value pairs, must be a string</p>
+            <p> -Also sessionStorage object available, though data only saved for the session</p>
+            <p> -Syntax: localStorage.setItem('name', 'Walter White');</p>
+            <p> -to check it's working, close browser. Then open and: localStorage.getItem('name'); </p>
+            <p> -Remove entry using removeItem method: localStorage.removeItem('name'); or delete localStorage.name</p>
+            <p> -storage event fired when value is saved to local storage. Has lots of prperties. We can use this!</p>
+            <p> -key tells us the key of the item that changed; self explanatory: newValue, oldVAlue, storageArea (is it
+                local or session storage)</p>
+            <p> -Only strings. Might seem like a limitation, but using JSON not so. Can parse the data to get it back
+                and usable. ex: superman = JSON.parse(localStorage.getItem('superman')); </p>
+        </section>
+        <section>
+            <h3>GEOLOCATION</h3>
+            <p> -Just like it sounds. Location of device.</p>
+            <p> -Privacy concerns (!); User must give permission first</p>
+            <p> -Property of navigator object (from sitepoint JS novice to ninja ch 9)</p>
+            <p> -has method of getCurrentPosition() that returns position object to a callback function, called
+                youAreHere in example. Ex: navigator.geolocation.getCurrentPosition(youAreHere); </p>
+            <p> -Properties include coords, latitude, longitude.</p>
+            <p> -Also has position.speed, position.altitude, position.heading, position.timestamp</p>
+            <p> -Has properties that calculate ccuracy, too. position.accuracy referes to latitude and longitude. lower
+                return value = more accurate</p>
+            <p> -clearWatch() method stops callback</p>
+        </section>
+
+        <section>
+            <h3>Web Workers</h3>
+            <p>-Allow processes to be run in the background</p>
+            <p>-use Worker() constructor function. Ex: const worker = new Worker('task.js'); </p>
+            <p>-The postMessage() method can be used to send a messageandstart the worker working. </p>
+
+        </section>
+        <section>
+            <h3>FACTORIZING EXAMPLE</h3>
+            <a href="ch9example/factors.html">Example Here</a>
+            <p>-Note that if you do a very large number, 20 or more digits, it ties up the system. You can't change the
+                color since JS does one process at a time.</p>
+        </section>
+        <section>
+            <h3>ADDITIONAL INFORMATION</h3>
+            <p><a href="https://www.youtube.com/watch?v=pMK-jcOAYI8">Additional tutorial to clarify web workers/how to
+                    use</a></p>
+        </section>
+        <section>
+            <h3>WEBSOCKETS</h3>
+            <p>-New protocol that allows two-way communication with a server. Push messaging.</p>
+            <p>-example here: <a href="ch9example/websocket.html">Simple chat app using websockets</a></p>
+        </section>
+        <section>
+            <h3>NOTIFICATIONS</h3>
+            <p>-Usually a popup in the corner of the screen (depending on browser)</p>
+            <p>-Have to get user permission. Ex: if(window.Notification) {
+                Notification.requestPermission();
+                } </p>
+            <p>-If permission is granted, you can create a notification with a constructor like this:
+                if(window.Notification) {
+                Notification.requestPermission()
+                .then((permission) => {
+                if(Notification.permission === 'granted') {
+                new Notification('Hello JavaScript!');
+                }
+                });
+                }</p>
+            <p>-More documentation <a href="https://developer.mozilla.org/en-US/docs/Web/API/notification">here.</a></p>
+
+        </section>
+        <section>
+            <h3>Multimedia</h3>
+            <p>-audio and video tags make it easy to play multimedia without things like flash. Also there is a media
+                API to control playback. </p>
+            <p>-src attrigute points to the audio file.</p>
+            <p>-Any content inside the audio or video tag will only display if the browser doesn't support audio and
+                video playback; hence can be an error message.</p>
+            <p>-controls attribute can be used to display browser's native controls.</p>
+            <p>-properties include play(), pause(), volume(), muted(), currentTime(), playbackRate(), loop(),
+                duration(). Used like this: video.play()</p>
+            <p>-Several events fire with audio and video: play event, pause event, volumechange event, loadmetadata
+                event. </p>
+        </section>
+        <section>
+            <h3>OTHER APIs</h3>
+            <p>-There are LOTS available. A comprehensive list is at the Mozilla Developer Network.</p>
+        </section>
+        <section>
+            <h3>DRAWING WITH CANVAS</h3>
+            <p>-coordinate system that starts at (0,0) in the top left corner. Added with canvas element specifying height and width.</p>
+            <canvas id='canvas' width='400' height='400'>Sorry, but your browser does not support the canvas element</canvas>
+        </section>
+        <section><h3>SHIMS AND POLYFILLS</h3>
+            <p>-Allow you to use APIs, even when browsers don't have all the info you'd need. Supports older browsers.</p>
+        </section>
+        <br><br>
+        <section><h3>THE WINDOW OBJECT</h3>
+            <p>-The window object is the browser's global object for JS. All properties, functions are methods of it.</p>
+            <p>-The Browser Object Model (BOM), is teh collection of properries and methods with information about the browser and computer screen.</p>
+            <p>-Global variable are created without const, let, or var. can be accessed in all parts of the program.</p>
+            <p>-parseInt() and isNaN() are methods of the global object. Could be written like window.parseInt(4.2), but we usually omit the window.</p>
+            <p>-alert(), confirm(), and prompt() are methods of the window object, too.</p>
+            <p>-can be used to get info about a user's browser. Eden's notes: Uh, privacy?</p>
+            <p>-Navigator property retruns refrence to navigator object (info about browser being used). userAgent property returns browser, OS being used.</p>
+            <p>-window.location contains info about the URL of the current page. the href property returns the url as a string: ex: window.location.href. It's a read/write property so it can be changed by assignment. </p>
+            <p>-window.location.protocol returns protocol used.</p>
+            <p>-window.location.host returns a string desctibing the domain ot the current URL and port number (Eden's Notes: Again. PRIVACY? As a user...major yikes.)</p>
+            <p>-window.location.port returns string with port number</p>
+            <p>-window.location.hash, window.location.origin, window.loction.assign...and other terrifyingly intrusive things a website can find out about you.</p>
+        </section>
+        <section>
+            <h3>THE BROWSER HISTORY</h3>
+            <p>-window.history can access iinfo about previously visited pages in a current browsing session.</p>
+            <p>-window.history.length shows how many pages visited before current one.</p>
+            <p>-window.history.go() method can be used to go to a specific page where 0 is the current page. Can also navigate forwards and backwards with window.history.forward() and window.history.back()</p>
+        </section>
+        <section><h3>CONTROLING WINDOWS</h3>
+            <p>-window.open() can open new window. If you're evil. Then popup.close(); can close it.</p>
+            <p>-window.moveTo(0,0) can move it.</p>
+            <p>-This stuff is just bad programming. Don't use it.</p></section>
+            <section><h3>Screen information</h3>
+            <p>-window.screen has info about screen browser is displayed on. availHeight and availWidgh can find height and width, minus menus.</p>
+            <p>-ColorDepth can find color bit depth of user's monitor.</p>
+        </section>
+        <section><h3>THE DOCUMENT OBJECT</h3>
+            <p>-The window object contains a document object. It has properties and methods to deal with the page loaded in the window.</p>
+            <p>-document.write() writes a string of text to a page. If the page is already loaded, it replaces the current document.</p>
+            <p>-can write HTML, too. ex: document.write('h1>Hello, world!/h1>'); </p>
+            <p>-its use is highly discouraged since it mixes JS within an HTML document.</p>
+        </section>
+        <section>
+            <h3>COOKIES</h3>
+            <p>-Small files saved locally on a computer. They store info to be used between requests.</p>
+            <p>-CAn only save 4kb of data, 20 files per domain.</p>
+            <p>-Personalize a user's browsing experience, preferences, etc.</p>
+            <p>-Starting to be replaced by localStorage API.</p>
+            <p>Take the form of a text file with name/value pairs separated by semicolons. Ex:"name=Superman; hero=true; city=Metropolis" </p>
+        </section>
+        <section>
+            <h3>Creating Cookies</h3>
+            <p>-First, assign it to JS's "cookie jar" using document.cookie property: ex: document.cookie = 'name=Superman'; </p>
+            <p>-Can continue to apend data to end of string by adding more cookies and assigning them to document.cookie.</p>
+        </section>
+        <section>
+            <h3>READING COOKIES</h3>
+            <p>-To see content of cookie jar, just enter document.cookie.</p>
+            <p>-The split method breaks the string into an array containing each name/value pair. You use a "for of" loop to iterate through the array. Example:  onst cookies = document.cookie.split("; ");
+                for (crumb of cookies){
+                    const [key,value] = crumb.split("=");
+                    console.log(`The value of ${key} is ${value}`);
+                }
+            </p>
+            <p>-To see an example of cookies used in the wild, you can visit almost any website, open the browser console, and type document.cookie .</p>
+        </section>
+        <section><H3>COOKIE EXPIRY DATES</H3>
+            <p>-Cookie are deleted once a browser session is finished, but they can be made persistent by adding "; expires=date" to the end of cookie when it's set where date is a value in the UTC string format.</p>        
+        </section>
+        <section><h3>THE PATH AND DOMAIN OF COOKIES</h3>
+        <p>-Path can be changed so any page in the root directory can read the cookie. Done by adding ; path-/ to the end of the cookie when set.</p>
+        <p>-Can also set domain by adding '; domain-domainName" to end of cookie.</p>
+    </section>
+    <section><h3>SECURE COOKIES</h3>
+        <p>Adding the string ; secure will make sure it's only transmitted over secure HTTPS network.</p></section>
+    <section><h3>DELETING COOKIES</h3>
+        <p>-To remove a cookie, you need to set it to expire at a time in the past.</p></section>
+    <section><h3>TIMING FUNCTIONS</h3>
+        <h4>setTimeout</h4>
+            <p>methods for scheduling execution of a function include window.setTimeout(). Accepts a callback to a function as its first parameter and a number of milliseconds as its second parameter. Ex: window.setTimeout( () => alert("Time's Up!"), 3000);</p>
+        <h4>setInterval</h4>            
+            <p>-setInterval works like wondow.setTimeout except it will invoke teh callback function repeatedly after a given number of milliseconds.</p>
+    </section>
+    <section><h3>ANIMATION</h3>
+        <p>See <a href="ch9example/animation/index.html">here.</a></p>
+    </section>
+    <section>
+        <h3>requestAnimationFrame</h3>
+            <p>=Method of teh window object; works like window.setInterval(), but better performance.</p>
+            <p><a href="ch9example/animation/index.html">This link</a> now updated to use new method (old way commented out in JS if you want to look at it still). That said, CSS is better. Can do the same thing with<br>
+                #square {
+                    margin: 100px;
+                    width: 100px;
+                    height: 100px;
+                    background: #cc0;
+                    animation: spin 4s linear infinite;
+                }
+                @keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(3600deg); } }</p>
+    </section>
+    </main>
+
+    <footer>
+        &copy; <span id="currentyear"></span> Eden Borrowman | Pennsylvania |
+        <a href="https://www.byui.edu/online">BYU-I Online Learning</a> |
+        <span id="currentdate"></span><br />
+        <div class="subscript">
+            Last Modified: <span id="lastModified"></span>
+        </div>
+    </footer>
+    <script src="js/notes9.js"></script>
+</body>
+
+</html>
