@@ -82,8 +82,7 @@ let links = [
         assignment: "Second Block Project Proposal",
         assignmentUrl: "proposal.html"        
     },
-
-    
+        
 ]
 
 
