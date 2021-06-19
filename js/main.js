@@ -78,7 +78,7 @@ let links = [
         notes: "Notes and Examples",
         url: "notes9.html",
         group: "Weekly Group Assignment",
-        teamUrl: "/team_meeting/drums/index.html",
+        teamUrl: "team_meeting/drums/index.html",
         assignment: "Second Block Project Proposal",
         assignmentUrl: "proposal.html"        
     },
