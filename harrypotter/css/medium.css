@@ -1,0 +1,7 @@
+@media only screen and (min-width: 35rem){
+
+.house_icon_container {
+    display: flex;
+    justify-content: space-evenly;
+ }
+}

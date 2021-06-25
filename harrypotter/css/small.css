@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Roboto&display=swap');
+
+body{
+    font-size: 16px;
+}
+main{
+    margin: auto;
+    max-width: 800px;
+}
+
+h1{
+    font-family: 'Mountains of Christmas', cursive;
+    color: #F2B705;
+    font-weight: 400;
+}
+span.title_size{
+    font-size:5rem;
+    display: block;
+}
+
+header{
+    background-color: #750022;
+text-align: center;
+padding: 2%;
+  
+}
+
+.shield{
+    width: 120px;
+}
+
+.main_harry_img{
+    display: block;
+    max-width: 350px; 
+    margin: auto;
+}
+
+.house_icon {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+a:hover {
+    transform: scale(1.1);
+    transition: transform .75s;
+    color:#750022;
+}
+.shield:hover{
+    transform: scale(1.1);
+    transition: transform .5s ease;
+}
+
+footer{
+background-color: #750022;
+text-align: center;
+padding: 2%;
+color:#F2B705;
+}
