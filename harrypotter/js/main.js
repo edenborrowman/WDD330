@@ -1,4 +1,4 @@
-const requestURL = "http://hp-api.herokuapp.com/api/characters"
+const requestURL = "https://hp-api.herokuapp.com/api/characters"
 
 function fetch_info(url) {
     fetch(url)
