@@ -82,6 +82,15 @@ let links = [
         assignment: "Second Block Project Proposal",
         assignmentUrl: "proposal.html"        
     },
+    {
+        label: "Week 10: June 20 - June 27",
+        notes: "Notes and Examples",
+        url: "notes10.html",
+        group: "Weekly Group Assignment",
+        teamUrl: "quake_app/index.html",
+        assignment: "Second Block Project In Progress",
+        assignmentUrl: "harrypotter/index.html"        
+    }
         
 ]
 
