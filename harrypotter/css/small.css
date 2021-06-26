@@ -63,3 +63,40 @@ text-align: center;
 padding: 2%;
 color:#F2B705;
 }
+
+/* Sorting Hat Page */
+
+body.sorting_hat_page {
+    background-image: url("/harrypotter/images/brick_wall.png");
+}
+
+.sorting_area{
+    color: #F2B705;
+}
+
+.hat{
+    width: 420px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 100px;
+    right: 0;
+    margin: auto auto 0;
+    z-index: 1; 
+}
+/* @keyframes myanimation{
+    0% {top:-40px}
+    25% {}
+    
+} */
+.student{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto auto 0;
+    width: 200px;
+    
+}
+
