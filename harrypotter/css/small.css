@@ -75,11 +75,6 @@ body.sorting_hat_page {
     background-image: url("/harrypotter/images/brick_wall.png");
 }
 
-.sorting_area{
-    color: #F2B705;
-    
-}
-
 #hat{
     width: 420px;
     position: absolute;
@@ -103,16 +98,15 @@ body.sorting_hat_page {
     }
     100%{
         opacity: 1;
-    }
-}
-.hide {
-    display: none;
+    } 
 }
 
 
 
-#hat:hover{
+
+.sort_in_progress{
     transform: translate(0px, 100px);
+    
 }
 .student{
     position: absolute;
@@ -147,3 +141,14 @@ body.sorting_hat_page {
     transition: .4s ease;
     color: white;
 }
+
+.announcement_div {
+    color: #F2B705; 
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 3rem;
+  }
+
+  /* .hide {
+    display: none;
+} */
+
