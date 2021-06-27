@@ -12,14 +12,13 @@ document.addEventListener("click", (event) => {
     // Clear out any old styling
     reset();
     toggleHide(hat);
-    hat.classList.add("sort_in_progress");
     setTimeout(magical_change, 3000);    
 });
 
 // function to toggle hat's visibility
 
-var hat = document.querySelector("#hat")
-function toggleHide(hat) {
+    var hat = document.querySelector("#hat")
+    function toggleHide(hat) {
     hat.classList.toggle('hide');
 }
 
@@ -57,6 +56,10 @@ function magical_change() {
     function reset(){
         document.querySelector(".announcement").textContent = "";
         document.querySelector(".student").src = "images/harry_pre_sort.svg"
-        document.querySelector("#hat").src = "images/sorting_hat_illustration_1.svg";
+        document.querySelector("#hat").src = "images/sorting_hat_illustration_1.svg";   
+        
         
     }
+
+
+ 
