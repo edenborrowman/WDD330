@@ -72,7 +72,7 @@ color:#F2B705;
 }
 
 body.sorting_hat_page {
-    background-image: url("/harrypotter/images/brick_wall.png");
+    background-image: url("www.edenborrowman.github.io/wdd330/harrypotter/images/brick_wall.png");
 }
 
 #hat{
@@ -89,7 +89,7 @@ body.sorting_hat_page {
     animation-name: fade-in;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 1.5s  
+    animation-duration: 1s  
 }
 
 @keyframes fade-in {
@@ -108,7 +108,6 @@ body.sorting_hat_page {
     transform: translate(0px, 100px);
     
 }
-
 .student{
     position: absolute;
     top: 0;

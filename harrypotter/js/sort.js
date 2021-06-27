@@ -12,6 +12,7 @@ document.addEventListener("click", (event) => {
     // Clear out any old styling
     reset();
     toggleHide(hat);
+    hat.classList.add("sort_in_progress");
     setTimeout(magical_change, 3000);    
 });
 
