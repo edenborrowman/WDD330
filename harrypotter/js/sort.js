@@ -8,7 +8,7 @@ let houses = [
 
 
 //add event listener for button click
-document.addEventListener("click", (event) => {
+document.querySelector("#hat").addEventListener("click", (event) => {
     // Clear out any old styling
     reset();
     toggleHide(hat);
