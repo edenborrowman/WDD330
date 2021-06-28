@@ -121,8 +121,69 @@
         valid <br>
         valueMissing <br>
         willValidate <br></p>
+      <h3>Implementing a Customized Error Message</h3>
+      <p>-Automated error messages can't be changed with CSS and depent on browser locale (cauising potential language
+        conflicts)</p>
+      <p>-Custom error messages fix this.</p>
+      <p>EXAMPLE:</p>
+      <form>
+      <label for="mail">I would like you to provide me with an e-mail address:</label>
+      <input type="email" id="mail" name="mail">
+      <button>Submit</button>
+      </form>
+      <p>EXAMPLE 2:</p>
+      <form novalidate>
+        <p>
+          <label for="mail">
+            <span>Please enter an email address:</span>
+            <input type="email" id="mail" name="mail" required minlength="8">
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </p>
+        <button>Submit</button>
+      </form>
+      <H3>Validating forms without a built-in API</H3>
+      <p>-Sometimes you might not want to use the Constraint Validation API.</p>
+      <p>-You can still use JS to validate a form, but you have to write your own.</p>
+      <p>-Determine what kind of validation, what to do if it doesn't validate, and how to help user correct data.</p>
+      <p>-Useful UI articles about this <a href="https://uxdesign.smashingmagazine.com/2012/06/27/form-field-validation-errors-only-approach/">here, </a><a href="https://www.smashingmagazine.com/2009/07/07/web-form-validation-best-practices-and-tutorials/">here, </a><a href="https://www.webfx.com/blog/web-design/10-tips-for-optimizing-web-form-submission-usability/">here, </a>and <a href="https://www.alistapart.com/articles/inline-validation-in-web-forms/">here.</a></p>
+      <p>EXAMPLE 3: A form tht doesn't use the constraint validation API</p>
+      <form>
+        <p>
+          <label for="mail">
+              <span>Please enter an email address:</span>
+              <input type="text" id="mail" name="mail">
+              <span class="error" aria-live="polite"></span>
+          </label>
+        </p>
+        <!-- Some legacy browsers need to have the `type` attribute
+             explicitly set to `submit` on the `button`element -->
+        <button type="submit">Submit</button>
+      </form>
 
-
+    </section>
+    <section>
+      <h2>USING FETCH</h2>
+      <p>-Fetch API lets JS access and manipulate parts of the HTTP pipeline such as requests and respones.</p>
+      <p>-Provides a global fetch() method for easy asynch fetching of resources</p>
+      <p>-basic fetch syntax: fetch('http://example.com/movies.json') <br>
+        .then(response => response.json()) <br>
+        .then(data => console.log(data)); </p>
+      <p>-This is just an HTTP response, not the actual JSON.</p>
+      <p>-To gt JSON body content from response, we use the json() method</p>
+      <h3>Supplying request options</h3>
+      <p>=Fetch() method can accept a secont parameter, an init object to allow you to control settings. Details <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch">here.</a></p>
+      <p>Example of the fetch syntax</p>
+      <img class="screenshot" src="images/fetchexample.jpg" alt="example of fetch syntax">
+        <h3>Sending a request with credentials included</h3>
+        <p>-add credentials: 'include' to the init object you pass to fetch() method. Ex: fetch('https://example.com', { <br>
+          credentials: 'include' <br>
+        });</p>
+      <h3>Uploading JSON data</h3>
+      <p>-Use fetch() to POST JSNO-encoded data</p>
+      <img class="screenshot" src="images/fetchex2.jpg" alt="fetch syntax example">
+      <img class="screenshot" src="images/fetchex3.jpg" alt="fetch syntax example">
+      <img class="screenshot" src="images/fetchex4.jpg" alt="fetch syntax example">
     </section>
 
   </main>
