@@ -230,3 +230,17 @@ body {
     background-repeat: no-repeat;
     
 }
+
+.oliWelcome{
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+ 
+}
+
+#oliLogo{    
+    width: 80%;  
+    padding: 5%;  
+}
