@@ -191,7 +191,7 @@ body.sorting_hat_page {
     max-width: 300;
     height: 375px;
     background-color:#750022;
-    background: url("https://edenborrowman.github.io/wdd330/harrypotter/images/paper3.jpg");
+    background: url("https://edenborrowman.github.io/wdd330/harrypotter/images/paper17.svg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 3%;
@@ -251,7 +251,7 @@ main.ollivanders {
 
 button#wandEnter {  
     background-color: black;
-    padding: 15px;
+    padding: 5px;
     border-radius: 5px;
 }
 
