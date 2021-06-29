@@ -229,7 +229,7 @@ body.sorting_hat_page {
 }
 
 main.ollivanders {
-    background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/ricepaper.png");
+    background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/oldPaper.jpg");
     background-size:cover;
     /* background-repeat: no-repeat; */
     
@@ -247,4 +247,15 @@ main.ollivanders {
 #oliLogo{    
     width: 80%;  
     padding: 5%;  
+}
+
+button#wandEnter {  
+    background-color: black;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#buttonLink{
+    color: white;
+    padding: 15px;
 }
