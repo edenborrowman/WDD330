@@ -160,21 +160,23 @@ body.sorting_hat_page {
 } */
 
 /* Chocolate Frog Trading Cards */
+.frog_main{
+    background-color: rgb(39, 39, 39);
+}
 
 .wrapper{
     margin-left: auto;
     margin-right: auto;
     align-items: top;
     padding: 5%;
-    
+    color: #F2B705     
 }
 .card{
     margin-left: auto;
     margin-right: auto;
     align-items: top;
     padding: 5%;
-    /* position: relative; */
-    width: 300px;
+    width: 280px;
     transform-style: preserve-3d;
     transition: transform 1s;
     perspective: 1000px;
@@ -186,27 +188,34 @@ body.sorting_hat_page {
 .front {
     position: absolute;
     text-align: center; 
-    width: 300px;
-    height: 400px;
+    width: 280px;
+    height: 375px;
     background-color:#750022;
-    background-image: url("https://");
+    background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/paper3.jpg");
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
     padding: 3%;
+    border: 20px solid #F2B705;
    
 }
 
 .back {
     display: absolute;   
-    width: 300px;
-    height: 400px;
+    width: 285px;
+    height: 380px;
     background-color:#F2B705;
     transform: rotateY(180deg);
     backface-visibility:  hidden;
     padding: 3%;
-    border: 15px solid black;
+    border: 20px solid black;
+    color: black;
 }
 .cardImages{
     display: block;
-    width: 200px;
+    width: 180px;
+    height:250px;
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
+    border: 15px solid black;
 }
