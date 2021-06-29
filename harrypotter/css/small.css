@@ -163,23 +163,21 @@ body.sorting_hat_page {
 .frog_main{
     background-color: rgb(39, 39, 39);
 }
+.card_table {
+    max-width: 800px;
+    margin: auto;
+}
 
-.wrapper{
-    margin-left: auto;
-    margin-right: auto;
-    align-items: top;
-    padding: 5%;
+.wrapper{    
     color: #F2B705     
 }
 .card{
-    margin-left: auto;
-    margin-right: auto;
-    align-items: top;
-    padding: 5%;
-    width: 280px;
+    width: 300px; 
     transform-style: preserve-3d;
     transition: transform 1s;
     perspective: 1000px;
+    margin: auto;
+    padding: 3%;
 }
 .card:hover{
     transform: rotateY(180deg);
@@ -188,20 +186,24 @@ body.sorting_hat_page {
 .front {
     position: absolute;
     text-align: center; 
-    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300;
     height: 375px;
     background-color:#750022;
     background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/paper3.jpg");
-    background-size: 500px 500px;
+    background-size: 375px 400px;
     background-repeat: no-repeat;
     padding: 3%;
     border: 20px solid #F2B705;
+    
    
 }
 
 .back {
-    display: absolute;   
-    width: 285px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px; 
     height: 380px;
     background-color:#F2B705;
     transform: rotateY(180deg);
@@ -218,4 +220,13 @@ body.sorting_hat_page {
     margin-left: auto;
     margin-right: auto;
     border: 15px solid black;
+}
+
+/* Wand Shop */
+
+body {
+    background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/parchment.svg");
+    background-size: 375px 400px;
+    background-repeat: no-repeat;
+    
 }
