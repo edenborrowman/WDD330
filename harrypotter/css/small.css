@@ -224,10 +224,14 @@ body.sorting_hat_page {
 
 /* Wand Shop */
 
-body {
-    background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/ancientpaper.png");
-    background-size: 375px 400px;
-    background-repeat: no-repeat;
+#wandshop{
+    background: black;
+}
+
+main.ollivanders {
+    background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/ancientpaper.svg");
+    background-size:cover;
+    /* background-repeat: no-repeat; */
     
 }
 
