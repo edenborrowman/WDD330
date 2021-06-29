@@ -191,8 +191,8 @@ body.sorting_hat_page {
     max-width: 300;
     height: 375px;
     background-color:#750022;
-    background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/paper3.jpg");
-    background-size: 375px 400px;
+    background: url("https://edenborrowman.github.io/wdd330/harrypotter/images/paper3.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 3%;
     border: 20px solid #F2B705;
@@ -225,7 +225,7 @@ body.sorting_hat_page {
 /* Wand Shop */
 
 body {
-    background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/oldPaper.jpg");
+    background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/ancientpaper.png");
     background-size: 375px 400px;
     background-repeat: no-repeat;
     
