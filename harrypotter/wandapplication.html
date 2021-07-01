@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="The Wondereful World of Harry Potter" content="JS based App" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="The Wonderful World of Harry Potter">
+    <title>The Wonderful World of Harry Potter</span></title>
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+<body>
+    <header>
+        <h1 class="title">The Wonderful World of <br><span class="title_size">Harry Potter</span></h1>
+    </header>
+    <main >  
+        <p>Welcome to Ollivanders, home of the finest wands known to the wizarding world. To begin the wand selection process, please complete the following official Ministry of Magic application form.</p>
+        <div class="formdiv">
+            <form method="get" action="yourwand.html">
+                <fieldset>
+                    <legend class="legendtitle">Applicant's Information</legend>
+                    <label class="top">First Name*<input type="text" name="fname" required></label>
+                    <label class="top">Last Name*:<input type="text" name="lname" required /> </label>
+                    <label class="top">Country of Birth<input type="text" name="country" placeholder="United States of America" required />
+                    </label>
+
+                    <label class="top">Ancestry*</label>
+                    <select required name="ancestry" class="formbut">
+                        <option selected disabled>Please Select</option>
+                        <option value="pure_blood">Pure Blood</option>
+                        <option value="half_blood">Half Blood</option>
+                        <option value="muggle_born">Muggle Born</option>
+                        <option value="squib">Squib</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <!-- <label class="top">
+                        Zip Code*<input type="number" name="zip" placeholder="90210" required /> -->
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend class="legendtitle">Magical Education</legend>
+                    <label class="top">School Attended*<input type="text" name="school" required></label>
+                    <label class="top">Date Begun<input type="date" name="date"></label>
+                    <label class="top">Date Ended<input type="date" name="date"></label>
+                    <label class="top">Highest Level Completed</label>
+                    <select name="subject" class="formbut">
+                        <option selected disabled>Please Select</option>
+                        <option value="first">First Year</option>
+                        <option value="second">Second Year</option>
+                        <option value="third">Third Year</option>
+                        <option value="fourth">Fourth Year</option>
+                        <option value="fifth">Fifth Year</option>
+                        <option value="sixth">Sixth Year</option>
+                        <option value="seventh">Seventh Year</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend class="legendtitle">Wand Hand</legend>
+                    <label class="top">User's Dominant Spellcasting Hand</label>
+                    <!-- name left the same on all radio buttons. This means when one is selected, the other gets deselected. Otherwise you could click them all. -->
+                    <label class="sbs"><input type="radio" name="right" value="yes" />&nbsp; Right Hand</label>
+                    <label class="sbs"><input type="radio" name="left" value="no" />&nbsp; Left Hand</label>
+                    <label class="sbs"><input type="radio" name="other" value="maybe" />&nbsp; Other</label>
+
+                              
+                </fieldset>
+                <fieldset id="comments">
+                    <legend class="legendtitle">Additional Comments</legend>
+                    <label><input type="text" class="txtarea"></label>
+                </fieldset>
+                <input type="submit" value="Apply for Wand" class="submitBtn">
+            </form>
+    </div>   
+       
+    </main>
+    <footer><p>&copy Eden Borrowman 2021</p></footer>
+</body>
+</html>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="The Wonderful World of Harry Potter">
-    <title>The Wonderful World of Harry Potter</span></title>
+    <title>Wand Selection</title>
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
@@ -15,16 +15,25 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
-<body>
+<body class="bricks">
     <header>
         <h1 class="title">The Wonderful World of <br><span class="title_size">Harry Potter</span></h1>
+        <div id="instructions">
+            <h2>This much is clear to those of us who study wand lore: the wand chooses the wizard. Give this wand a flick and see what happens.</h2>
+        </div>
     </header>
-    <main >  
-        <p>Welcome to Ollivanders, home of the finest wands known to the wizarding world. To begin the wand selection process, please complete the following official Ministry of Magic application form.</p>
-        <form action=""></form>
+    <main class="wand">  
+        <button id="reset_button" onclick="resize()">Practice Another Spell</button>
+        
+        <canvas id="canvas">
+
+        </canvas>
+       
     </div>   
        
     </main>
+    <script src="js/wand.js"></script>
+    <script src="js/cursor.js"></script>
     <footer><p>&copy Eden Borrowman 2021</p></footer>
 </body>
 </html>
