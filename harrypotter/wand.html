@@ -23,10 +23,12 @@
         </div>
     </header>
     <main class="wand" >  
-        <h2 class="subhead">This much is clear to those of us who study wand lore:<br> the wand chooses the wizard. Give this wand a flick and see what happens.</h2>
-        <button id="reset_button" onclick="resize()">Practice Another Spell</button>
+        <h2 class="subhead">Wandwork is all in the wrist. Swish and flick. Practice until you can cast these spells perfectly.</h2>
+        <button id="reset_button" onclick="resize()">Try Again</button>
+        <button id="new_spell" onclick="newSpell()">Try A New Spell</button>
         
         <canvas id="canvas">
+            <img src="" alt="" id="spellTemplate">
 
         </canvas>
        
@@ -34,7 +36,7 @@
        
     </main>
     <script src="js/wand.js"></script>
-    <script src="js/cursor.js"></script>
+    <script src="js/spells.js"></script>
     <footer><p>&copy Eden Borrowman 2021</p></footer>
 </body>
 </html>

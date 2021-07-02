@@ -74,9 +74,6 @@ function sketch(event){
   ctx.lineTo(coord.x , coord.y);
     
   // Draws the line.
-  ctx.stroke();
- 
-
-  
+  ctx.stroke();  
  }
 
