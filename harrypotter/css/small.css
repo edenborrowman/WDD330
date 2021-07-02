@@ -20,10 +20,15 @@ span.title_size{
     display: block;
 }
 
+#sort_directions{
+    color: white;
+}
+
 header{
     background-color: #750022;
 text-align: center;
 padding: 2%;
+background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/hogwarts.svg");
   
 }
 
@@ -398,4 +403,22 @@ h1.h1sc {
       display: flex;
       align-items: center;
   }
-  
+
+  /* Your Wand Styling */
+
+#wandContainer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#yourWand {
+    height: 50vh;
+}
+
+#yourWand:hover{
+    transform: scale(1.1);
+    transition: transform .5s ease;
+
+}
