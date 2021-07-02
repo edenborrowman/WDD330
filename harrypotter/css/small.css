@@ -28,7 +28,7 @@ header{
     position: relative;
     background-color: #750022;
     max-height: 175px;
-text-align: center;
+    text-align: center;
 padding: 2%;
 background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/hogwarts.svg");
 background-repeat: repeat-x;
@@ -429,8 +429,8 @@ h1.h1sc {
     transition: transform .5s ease;
 }
 
-    .stars {
-        background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/chalk.jpg");
+    .chalk {
+        background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/chalk.png");
         background-size: cover;
     }
 
