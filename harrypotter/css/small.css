@@ -27,9 +27,11 @@ span.title_size{
 header{
     position: relative;
     background-color: #750022;
+    max-height: 175px;
 text-align: center;
 padding: 2%;
 background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/hogwarts.svg");
+background-repeat: repeat-x;
   
 }
 
@@ -425,9 +427,11 @@ h1.h1sc {
 #yourWand:hover{
     transform: scale(1.1);
     transition: transform .5s ease;
+}
 
-    .bricks {
+    .stars {
         background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/starrysky.svg");
+        background-size: cover;
     }
 
-}
+
