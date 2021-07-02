@@ -25,6 +25,7 @@ span.title_size{
 }
 
 header{
+    position: relative;
     background-color: #750022;
 text-align: center;
 padding: 2%;
@@ -229,8 +230,12 @@ color:#F2B705;
 
 /* Wand Shop */
 
-#wandshop{
-    background: black;
+.subhead{
+    color: white;
+    font-size: 1rem;
+    
+  
+    
 }
 
 main.ollivanders {
@@ -420,5 +425,9 @@ h1.h1sc {
 #yourWand:hover{
     transform: scale(1.1);
     transition: transform .5s ease;
+
+    .bricks {
+        background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/starrysky.svg");
+    }
 
 }
