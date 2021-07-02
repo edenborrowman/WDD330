@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Mountains+of+Christmas:wght@400;700&family=Roboto&display=swap');
+
 
 body{
     font-size: 16px;
@@ -29,7 +30,7 @@ span.title_size{
 header{
     position: relative;
     background-color: #750022;
-    max-height: 175px;
+    max-height: 150px;
     text-align: center;
     padding: 3%;
     background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/hogwarts.svg");
@@ -438,6 +439,7 @@ h1.h1sc {
     .chalk {
         background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/chalk.png");
         background-size: cover;
+        z-index: -20;
     }
 
     #instructions {
@@ -445,6 +447,27 @@ h1.h1sc {
     }
 
 /* Spell Practice Styling */
+
+main.spellPage{
+    width: 100%;
+    margin: 0; 
+    max-width: 100%;
+    text-align: center; 
+}
+
+#spellContainer{
+    margin-left: auto;
+    margin-right: auto;
+      
+}
+
+#spell_name, #class, #purpose {
+    font-family: 'Homemade Apple', cursive;
+    color: white;
+    line-height: 1rem;    
+}
+
+
 
 
 

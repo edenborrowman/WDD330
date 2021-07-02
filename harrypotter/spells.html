@@ -15,28 +15,38 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
+
 <body class="chalk">
     <header>
         <h1 class="title">The Wonderful World of <br><span class="title_size">Harry Potter</span></h1>
         <div id="instructions">
-            
+            <h2 class="subhead">Wandwork is all in the wrist. Swish and flick. Practice until you can cast these spells
+                perfectly.</h2>
+
         </div>
     </header>
-    <main class="wand" >  
-        <h2 class="subhead">Wandwork is all in the wrist. Swish and flick. Practice until you can cast these spells perfectly.</h2>
-        <button id="reset_button" onclick="resize()">Try Again</button>
-        <button id="new_spell" onclick="newSpell()">Try A New Spell</button>
+    <main class="spellPage">
         
-        <canvas id="canvas">
-            <img src="" alt="" id="spellTemplate">
+        <div id="spell_details">
+        </div>
+            <p id="spell_name"></p>
+            <p id="class"></p>
+            <p id="purpose"></p>
+        <div id="spellContainer">             
+            <canvas id="canvas">
+            </canvas>
+            <button id="reset_button" onclick="resize()">Try Again</button>
+        <button id="new_spell" onclick="newSpell()">Try A New Spell</button>
+        </div>
 
-        </canvas>
-       
-    </div>   
-       
+
+
+        </div>
+
     </main>
     <script src="js/wand.js"></script>
     <script src="js/spells.js"></script>
-    <footer><p>&copy Eden Borrowman 2021</p></footer>
+    
 </body>
+
 </html>
