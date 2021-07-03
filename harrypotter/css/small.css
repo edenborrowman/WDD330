@@ -425,14 +425,16 @@ h1.h1sc {
 
 #wandContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    max-height: 30vh;
 }
 
 #yourWand {
     height: 45vh;
+    filter: contrast(200%);
 }
 
 #yourWand:hover{
@@ -452,8 +454,23 @@ h1.h1sc {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 500px;
-        width: 400px;
+        height:200px;
+        width: 250px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: .2;    
+        font-family: "Mountains of Christmas", cursive;
+        font-weight: bold;
+        font-size: 1.2rem; 
+    }
+
+    #wood{
+        
+    }
+
+    #wood, #length, #core, #character {
+       
     }
 
 /* Spell Practice Styling */

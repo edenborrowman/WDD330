@@ -11,7 +11,7 @@ let wands = [
         length: '13 inches',
         core: 'Unicorn Hair',
         character: 'Responsive',
-        url: 'images/wand2.svg',
+        url: 'images/wand9.svg',
     },
     {
         wood: 'Ash',
@@ -49,6 +49,7 @@ let randomWand = Math.floor(Math.random() * wands.length);
     console.log(randomWand);
 
 document.getElementById("yourWand").src = wands[randomWand].url;
-
-
-//declare elements for wand labels
+document.getElementById("wood").innerText = "Wood: " + wands[randomWand].wood;
+document.getElementById("length").innerText = "Length: " + wands[randomWand].length;
+document.getElementById("core").innerText = "Core: " + wands[randomWand].core;
+document.getElementById("character").innerText = "Character: " + wands[randomWand].character;
