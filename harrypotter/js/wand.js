@@ -57,7 +57,7 @@ function sketch(event){
   // to a round shape.
     ctx.lineCap = 'round';
     ctx.strokeStyle = "#75ffff"  
-    ctx.shadowBlur = 20;
+    ctx.shadowBlur = 25;
   ctx.shadowColor = "#75ffff";
       
   // The cursor to start drawing

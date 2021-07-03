@@ -456,8 +456,16 @@ main.spellPage{
     width: 10rem;
     margin: 0 5px 0 5px;
     border-radius: 10px;
-    color: black;
+    color:#750022;
     background-color:#F2B705;
+    
+}
+
+.spell_bottom {
+    height: 10%;
+    position:fixed;
+   bottom:0;
+    left:0;
 }
 
 
