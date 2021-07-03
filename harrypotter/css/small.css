@@ -318,6 +318,28 @@ position:fixed;
  left:0;
 }
 
+.oliWelcome{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.wand_icon{
+    width: 300px;
+}
+
+.wand_menu {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+ .wand_menu:hover, .wand_icon:hover{
+     transform: scale(1.1); 
+     transition: transform .75s;
+     filter: contrast(200%);
+ }
+
 /* wand application */
 
 h1.h1sc {
@@ -426,6 +448,12 @@ h1.h1sc {
 
     #instructions {
         text-align: center;
+        background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/ancientpaper.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 400px;
     }
 
 /* Spell Practice Styling */

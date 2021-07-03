@@ -51,5 +51,4 @@ let randomWand = Math.floor(Math.random() * wands.length);
 document.getElementById("yourWand").src = wands[randomWand].url;
 
 
-
-
+//declare elements for wand labels
