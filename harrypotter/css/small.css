@@ -87,6 +87,10 @@ background-color: #750022;
 text-align: center;
 padding: 2%;
 color:#F2B705;
+bottom:0;
+left:0;
+right:0;
+height:20px;
 }
 
 /* Sorting Hat Page */
@@ -251,9 +255,7 @@ color:#F2B705;
 
 .ollivanders {
     background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/oldPaper.jpg");
-    background-size:cover;
-    /* background-repeat: no-repeat; */
-    
+    background-size:cover;   
 }
 
 .oliWelcome{
@@ -302,6 +304,12 @@ h2 {
     color:white;
 }
 
+#bottom {
+position:fixed;
+ bottom:0;
+ left:0;
+}
+
 /* wand application */
 
 h1.h1sc {
@@ -343,19 +351,6 @@ h1.h1sc {
       background-color: rgba(0,0,0,0.1);
   }
   
-  #rating {
-    display: block;
-      padding-top: 3rem;
-      color: #2a3640;
-      font-size: 1rem;
-      
-    
-  }
-  
-  div#rate {
-    margin-top: -1.5rem;
-  }
-  
   form label.sbs {
       display: block;
       padding: .75rem 0;
@@ -364,7 +359,7 @@ h1.h1sc {
   }
   form input.submitBtn {
       border: none;
-      background-color:#99b4bf;
+      background-color:#750022;
       color: white;
       border-radius: 1rem;
       padding: .75rem 1.5rem;
@@ -388,33 +383,12 @@ h1.h1sc {
       border-radius: 4px;
       padding: .75rem;
       color: #555;
-  }
-  
-  /* legend#danger {
-    color: red;
-  } */
-  
-  fieldset#danger{
-    margin-bottom: 5rem;
+      max-width: 98%;
   }
   
   form select.formbut {
     padding: 10px;
     border-radius: 4px;
-  }
-  
-  div#rate{
-    padding-top: 4.5rem;
-    margin-bottom: -1rem;
-  }
-  
-  span#ratingvalue {
-    color: blue;
-    padding: .2rem;
-  }
-  .flexly {
-      display: flex;
-      align-items: center;
   }
 
   /* Your Wand Styling */
