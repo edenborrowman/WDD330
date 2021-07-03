@@ -285,6 +285,14 @@ button#wandEnter {
 
 /* wand page */
 
+#oli_header{
+    background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/ollivanders_logo_white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    padding: 6%;
+}
+
 main.wand {
     width: 100%;
     margin: 0; 

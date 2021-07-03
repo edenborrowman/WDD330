@@ -4,24 +4,15 @@ let houses = [
     "Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"
 ];
 
+//add event listener for clicking on hat
 
-
-
-//add event listener for button click
+var hat = document.querySelector("#hat");
 document.querySelector("#hat").addEventListener("click", (event) => {
     // Clear out any old styling
     reset();
-    toggleHide(hat);
     hat.classList.add("sort_in_progress");
     setTimeout(magical_change, 3000);    
 });
-
-// function to toggle hat's visibility
-
-    var hat = document.querySelector("#hat")
-    function toggleHide(hat) {
-    hat.classList.toggle('hide');
-}
 
 // All the magical transformations
 
@@ -50,7 +41,6 @@ function magical_change() {
     // Deploy confetti
     confetti();        
     }
-
  
     var click = new Audio('audio/harp.wav');
 
@@ -58,9 +48,7 @@ function magical_change() {
         document.querySelector(".announcement").textContent = "";
         document.querySelector(".student").src = "images/harry_pre_sort.svg"
         document.querySelector("#hat").src = "images/sorting_hat_illustration_1.svg";   
-        
-        
-    }
+}
 
 
  
