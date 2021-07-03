@@ -35,6 +35,7 @@ header{
     padding: 3%;
     background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/hogwarts.svg");
     background-repeat: repeat-x;
+    background-position: center bottom;
     
   
 }
@@ -95,6 +96,12 @@ height:20px;
 
 /* Sorting Hat Page */
 
+.sorting_area{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
 .hat_title {
     font-size: 3rem;
 }
@@ -129,9 +136,6 @@ height:20px;
     } 
 }
 
-
-
-
 .sort_in_progress{
     transform: translate(0px, 100px);
     
@@ -144,14 +148,6 @@ height:20px;
     right: 0;
     margin: auto auto 0;
     width: 200px;    
-}
-
-.button_div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-    z-index: 2;
 }
 
 .sort {
@@ -174,6 +170,13 @@ height:20px;
     color: #F2B705; 
     font-family: 'Mountains of Christmas', cursive;
     font-size: 3rem;
+  }
+
+  #sort_directions{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
   }
 
   /* .hide {
