@@ -35,7 +35,7 @@ header{
     padding: 3%;
     background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/hogwarts.svg");
     background-repeat: repeat-x;
-    border: 5px solid black;
+    
   
 }
 
@@ -304,7 +304,7 @@ h2 {
     color:white;
 }
 
-#bottom {
+.bottom {
 position:fixed;
  bottom:0;
  left:0;
@@ -430,8 +430,10 @@ main.spellPage{
 }
 
 #spellContainer{
+    
     margin-left: auto;
     margin-right: auto;
+ 
       
 }
 
@@ -439,6 +441,23 @@ main.spellPage{
     font-family: 'Homemade Apple', cursive;
     color: white;
     line-height: 1rem;    
+}
+
+#spell_details{
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    text-align: left;
+    
+}
+
+#reset_button, #new_spell {
+    padding: 10px;
+    width: 10rem;
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
+    color: black;
+    background-color:#F2B705;
 }
 
 

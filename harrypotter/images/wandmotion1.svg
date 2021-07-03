@@ -6,7 +6,6 @@
 	.st0{fill:none;stroke:#F3A21F;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#F3A21F;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
 	.st2{fill:none;stroke:#F3A21F;stroke-width:4;stroke-miterlimit:10;}
-	.st3{fill:#FFFFFF;stroke:#F3A21F;stroke-width:4;stroke-miterlimit:10;}
 </style>
 <path class="st0" d="M158.5,62.6c7.2,3,22.6,10.7,33.9,27.7c19.6,29.5,10.1,62.2,8.6,66.9c-2.6,6.4-9.2,19.9-23.6,30.8
 	c-19,14.3-39.3,14.8-45.8,14.7c-5.4-0.7-34.9-5.1-52.9-31.2c-11.1-16-12.3-32.1-12.6-37.2c-0.2-4.4-0.2-26.6,13.7-45.2
@@ -17,5 +16,5 @@
 		<path class="st2" d="M39.6,180.4"/>
 	</g>
 </g>
-<circle class="st3" cx="155.4" cy="60.6" r="4.3"/>
+<circle class="st2" cx="155.4" cy="60.6" r="4.3"/>
 </svg>

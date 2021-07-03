@@ -19,34 +19,25 @@
 <body class="chalk">
     <header>
         <h1 class="title">The Wonderful World of <br><span class="title_size">Harry Potter</span></h1>
-        <div id="instructions">
-            <h2 class="subhead">Wandwork is all in the wrist. Swish and flick. Practice until you can cast these spells
-                perfectly.</h2>
-
-        </div>
     </header>
     <main class="spellPage">
-        
-        <div id="spell_details">
-        </div>
-            <p id="spell_name"></p>
-            <p id="class"></p>
-            <p id="purpose"></p>
-        <div id="spellContainer">             
+        <div id="spellContainer">
+            <div id="spell_details">
+                <p id="spell_name"></p>
+                <p id="class"></p>
+                <p id="purpose"></p>
+            </div>
             <canvas id="canvas">
             </canvas>
-            <button id="reset_button" onclick="resize()">Try Again</button>
+        </div>
+        <button id="reset_button" onclick="resize()">Try Again</button>
         <button id="new_spell" onclick="newSpell()">Try A New Spell</button>
-        </div>
-
-
-
-        </div>
-
     </main>
+    <footer class="bottom">
+        <h2 class="subhead">Wandwork is all in the wrist. Swish and flick. Practice until you can cast these spells
+            perfectly.</h2>
+    </footer>
     <script src="js/wand.js"></script>
     <script src="js/spells.js"></script>
-    
 </body>
-
 </html>
