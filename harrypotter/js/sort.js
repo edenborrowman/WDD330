@@ -44,10 +44,10 @@ function magical_change() {
  
     var click = new Audio('audio/harp.wav');
 
-    function reset(){
-        document.querySelector(".announcement").textContent = "";
-        document.querySelector(".student").src = "images/harry_pre_sort.svg"
-        document.querySelector("#hat").src = "images/sorting_hat_illustration_1.svg";   
+function reset(){
+    document.querySelector(".announcement").textContent = "";
+    document.querySelector(".student").src = "images/harry_pre_sort.svg"
+    document.querySelector("#hat").src = "images/sorting_hat_illustration_1.svg";   
 }
 
 

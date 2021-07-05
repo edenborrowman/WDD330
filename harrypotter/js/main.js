@@ -1,13 +1,16 @@
+import {pageSound} from "./audio.js";
+
+
 const requestURL = "https://hp-api.herokuapp.com/api/characters"
 
 function fetch_info(url) {
     fetch(url)
         .then(response => response.json())
         .then(json => {
-            console.table(json)
+            // console.table(json)
 
             const characters = json;
-            console.table(characters);
+            // console.table(characters);
 
             //declare elements for trading cards
             for (let i = 0; i < characters.length; i++) {
@@ -25,6 +28,17 @@ function fetch_info(url) {
                 let wand = document.createElement('p');
                 let patronus = document.createElement('p');
                 let image = document.createElement('img');
+
+            //Add an event listener to the card so we can play the sound
+                card.addEventListener('transitionstart', () => {
+                    console.log('transition started');
+                    pageSound.play();
+                    console.log(pageSound);
+                })
+
+            
+
+            
 
             //write text content for cards and set attributes as necessary for styling etc.
                 card.setAttribute('class', 'card');
@@ -45,7 +59,7 @@ function fetch_info(url) {
                 wand.textContent = 'Wand:' + ' ' + characters[i].wand.wood + ',' + ' ' + characters[i].wand.core + ',' + ' ', + characters[i].wand.length + ' ', + 'inches';
              
                 
-                console.log(wand.textContent);
+                // console.log(wand.textContent);
                 
 
             //Information going to the page
@@ -61,24 +75,19 @@ function fetch_info(url) {
                 back.appendChild(species);
                 back.appendChild(patronus);
                 back.appendChild(wand);
-                
-
-            //event listener for card. Note the arrow function--it fixes problem of event listener being triggered immediately
-                card.addEventListener("click", () => toggleHide(info_div));
+         
 
             //append card  
                 document.querySelector('div.wrapper').appendChild(card)    
                 document.querySelector('div.card').appendChild(section);
             }
 
+            
+
         });
+    
 }
 
 // calling function to get URL for pages
 fetch_info(requestURL);
 
-
-// function to toggle details about each individual
-// function toggleHide(info_div) {
-//     info_div.classList.toggle('hide');
-// }

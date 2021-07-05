@@ -436,7 +436,7 @@ h1.h1sc {
     max-height: 30vh;
 }
 
-#yourWand {
+.yourWand {
     height: 45vh;
     filter: contrast(200%);
 }
@@ -469,14 +469,17 @@ h1.h1sc {
         font-size: 1.2rem; 
     }
 
-    #wood{
-        
+    .wand_is_chosen{
+        background-color: red;
     }
 
-    #wood, #length, #core, #character {
-       
+    #olli_comm{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        text-align: center;
+        color: white;
     }
-
 /* Spell Practice Styling */
 
 main.spellPage{
@@ -497,7 +500,8 @@ main.spellPage{
 #spell_name, #class, #purpose {
     font-family: 'Homemade Apple', cursive;
     color: white;
-    line-height: 1rem;    
+    line-height: 1rem;  
+    font-size: 1.2rem;  
 }
 
 #spell_details{

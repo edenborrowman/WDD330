@@ -43,77 +43,53 @@ let wands = [
     },
 
 ]
-console.table(wands);
 
 let randomWand = Math.floor(Math.random() * wands.length);
-    console.log(randomWand);
 
-document.getElementById("yourWand").src = wands[randomWand].url;
-document.getElementById("wood").innerText = "Wood: " + wands[randomWand].wood;
-document.getElementById("length").innerText = "Length: " + wands[randomWand].length;
-document.getElementById("core").innerText = "Core: " + wands[randomWand].core;
-document.getElementById("character").innerText = "Character: " + wands[randomWand].character;
+let wand = document.getElementById("yourWand");
+let wood = document.getElementById("wood");
+let length = document.getElementById("length");
+let core = document.getElementById("core");
+let character = document.getElementById("character");
+ 
+wand.src = wands[randomWand].url;
+wood.innerText = "Wood: " + wands[randomWand].wood;
+length.innerText = "Length: " + wands[randomWand].length;
+core.innerText = "Core: " + wands[randomWand].core;
+character.innerText = "Character: " + wands[randomWand].character;
 
-var dragItem = document.querySelector("#yourWand");
-var container = document.querySelector("#wandContainer");
+document.getElementById("yourWand").addEventListener("click", (event) => {
+  resetWand();
+  wandMagic();
+ 
+});
 
-var active = false;
-var currentX;
-var currentY;
-var initialX;
-var initialY;
-var xOffset = 0;
-var yOffset = 0;
+let wandMsg = [
+  "Definitely not! Try again.",
+  "No, no. Not that one. Try again.",
+  "You're a tricky customer. Try again.",
+  "Hm. That's not right, is it? Try again.",
+  "Oh dear. Not that one. Try again.",
+  "Wrong, wrong, wrong. Try again.",
+  "That's clearly not it. Try again.",
+  "Not that one. Try again.",
+  "That's not a match. Try again.",
+  "That doesn't fit. Try again."
 
-container.addEventListener("touchstart", dragStart, false);
-container.addEventListener("touchend", dragEnd, false);
-container.addEventListener("touchmove", drag, false);
-
-container.addEventListener("mousedown", dragStart, false);
-container.addEventListener("mouseup", dragEnd, false);
-container.addEventListener("mousemove", drag, false);
-
-function dragStart(e) {
-  if (e.type === "touchstart") {
-    initialX = e.touches[0].clientX - xOffset;
-    initialY = e.touches[0].clientY - yOffset;
-  } else {
-    initialX = e.clientX - xOffset;
-    initialY = e.clientY - yOffset;
-  }
-
-  if (e.target === dragItem) {
-    active = true;
-  }
-}
-
-function dragEnd(e) {
-  initialX = currentX;
-  initialY = currentY;
-
-  active = false;
-}
-
-function drag(e) {
-  if (active) {
+]
+function wandMagic() {
+  let randomMessage = Math.floor(Math.random() * 10);
+  console.log(randomMessage);
   
-    e.preventDefault();
-  
-    if (e.type === "touchmove") {
-      currentX = e.touches[0].clientX - initialX;
-      currentY = e.touches[0].clientY - initialY;
-    } else {
-      currentX = e.clientX - initialX;
-      currentY = e.clientY - initialY;
+  if (randomWand == 7) {
+      wand.classList.add('wand_is_chosen');
+      document.getElementById("wandMessage").textContent = "You have been chosen! This is your wand."
     }
-
-    xOffset = currentX;
-    yOffset = currentY;
-
-    setTranslate(currentX, currentY, dragItem);
-  }
+  else {
+      document.querySelector("#wandMessage").textContent = wandMsg[randomWand];
+    }
 }
-
-function setTranslate(xPos, yPos, el) {
-  el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
+  
+function resetWand() {
+  document.querySelector("#wandMessage").textContent = "";
 }
