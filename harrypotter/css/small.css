@@ -436,9 +436,11 @@ h1.h1sc {
     max-height: 30vh;
 }
 
-.yourWand {
-    height: 45vh;
+#yourWand {
+    height: 400px;
     filter: contrast(200%);
+    position: absolute;
+    bottom: 50px;
 }
 
 #yourWand:hover{
@@ -458,28 +460,47 @@ h1.h1sc {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height:200px;
-        width: 250px; 
+        height:170px;
+        width: 200px; 
         display: flex;
         flex-direction: column;
         justify-content: center;
-        line-height: .2;    
+        line-height: .01%;    
         font-family: "Mountains of Christmas", cursive;
         font-weight: bold;
         font-size: 1.2rem; 
+       margin-top: 2%;
     }
 
     .wand_is_chosen{
-        background-color: red;
+        animation: roll .5s;           
+    }
+
+    @keyframes roll {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
     }
 
     #olli_comm{
+        font-family: 'Homemade Apple', script;
         margin-left: auto;
         margin-right: auto;
         width: 80%;
         text-align: center;
         color: white;
     }
+
+        .wand_bottom {
+            height: 50px;
+            position:fixed;
+           bottom:0;
+            left:0;
+        }
+    
 /* Spell Practice Styling */
 
 main.spellPage{
@@ -512,7 +533,7 @@ main.spellPage{
     
 }
 
-#reset_button, #new_spell {
+#reset_button, #new_spell, #tryAgain {
     padding: 10px;
     width: 10rem;
     margin: 0 5px 0 5px;

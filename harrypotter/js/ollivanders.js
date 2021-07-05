@@ -75,15 +75,19 @@ let wandMsg = [
   "Not that one. Try again.",
   "That's not a match. Try again.",
   "That doesn't fit. Try again."
-
 ]
+
 function wandMagic() {
   let randomMessage = Math.floor(Math.random() * 10);
   console.log(randomMessage);
+  let wandChime = new Audio('audio/wandharp.wav');
   
-  if (randomWand == 7) {
-      wand.classList.add('wand_is_chosen');
-      document.getElementById("wandMessage").textContent = "You have been chosen! This is your wand."
+  if (randomWand == 7 || randomWand == 5 || randomWand == 3) {
+    wandChime.play();
+    wand.classList.add('wand_is_chosen');
+    document.getElementById("wandMessage").textContent = "You have been chosen! This is your wand.";
+    
+
     }
   else {
       document.querySelector("#wandMessage").textContent = wandMsg[randomWand];
@@ -92,4 +96,9 @@ function wandMagic() {
   
 function resetWand() {
   document.querySelector("#wandMessage").textContent = "";
+  wand.classList.remove('wand_is_chosen');
+}
+
+function reset() {
+  location = location;
 }
