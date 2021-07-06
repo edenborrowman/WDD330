@@ -289,12 +289,11 @@ button#wandEnter {
 
 /* wand page */
 
-#oli_header{
-    background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/ollivanders_logo_gold.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 25%;
-    padding: 6%;
+
+
+#oliHeaderImg{
+    width: 50%;
+    max-width: 500px;
 }
 
 main.wand {
@@ -358,10 +357,11 @@ h1.h1sc {
   }
   
   form legend {
-      color:#2a3640;
+      font-family: 'Mountains of Christmas', cursive;
+      color:#750022;
       margin: 0 1rem;
       padding: 0 .5rem;
-      font-size: 1.5rem;    
+      font-size: 2rem;    
   }
   
   form label.top, form div {
@@ -369,7 +369,7 @@ h1.h1sc {
       padding-top: 1rem;
       color:#2a3640;
       font-size: 1.2rem;
-      font-family: "Montserrat", "Helvetica", sans-serif;
+      font-family: 'Roboto', Open Sans, Helvetica, Sans Serif;
   }
   
   form label.top input, form label.top select{
