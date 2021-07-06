@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Mountains+of+Christmas:wght@400;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Mountains+of+Christmas:wght@400;700&family=Roboto&display=swap&family=Schoolbell&display=swap');
 
 
 body{
@@ -290,7 +290,7 @@ button#wandEnter {
 /* wand page */
 
 #oli_header{
-    background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/ollivanders_logo_white.svg");
+    background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/ollivanders_logo_gold.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 25%;
@@ -432,12 +432,14 @@ h1.h1sc {
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
+    justify-content: center;
     width: 50%;
     max-height: 30vh;
 }
 
 #yourWand {
-    height: 400px;
+    height: 60%;
     filter: contrast(200%);
     position: absolute;
     bottom: 50px;
@@ -466,7 +468,7 @@ h1.h1sc {
         flex-direction: column;
         justify-content: center;
         line-height: .01%;    
-        font-family: "Mountains of Christmas", cursive;
+        font-family: 'Mountains of Christmas', cursive;
         font-weight: bold;
         font-size: 1.2rem; 
        margin-top: 2%;
@@ -486,12 +488,16 @@ h1.h1sc {
     }
 
     #olli_comm{
-        font-family: 'Homemade Apple', script;
+        font-family: 'Homemade apple', script;
         margin-left: auto;
         margin-right: auto;
         width: 80%;
         text-align: center;
         color: white;
+    }
+
+    #wandMessage{
+        font-size: 1.5rem;
     }
 
         .wand_bottom {

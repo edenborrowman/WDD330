@@ -17,8 +17,9 @@
     <link rel="manifest" href="images/site.webmanifest">
 
 <body class="chalk">
-    <header>
-        <h1 class="title">The Wonderful World of <br><span class="title_size">Harry Potter</span></h1>
+    <header><a href="index.html">
+            <h1 class="title">The Wonderful World of <br><span class="title_size">Harry Potter</span></h1>
+        </a>
     </header>
     <main class="spellPage">
         <div id="spellContainer">
@@ -29,17 +30,18 @@
             </div>
             <canvas id="canvas">
             </canvas>
-        </div>        
+        </div>
     </main>
     <footer class="spell_bottom">
         <h2 class="subhead">Wandwork is all in the wrist. Swish and flick. Practice until you can cast these spells
             perfectly.</h2>
-            <div class="buttonContainer">
-                <button id="reset_button" onclick="resize()">Try Again</button>
-                <button id="new_spell" onclick="newSpell()">Try A New Spell</button>
-                </div>
+        <div class="buttonContainer">
+            <button id="reset_button" onclick="resize()">Try Again</button>
+            <button id="new_spell" onclick="newSpell()">Try A New Spell</button>
+        </div>
     </footer>
     <script src="js/wand.js"></script>
     <script src="js/spells.js"></script>
 </body>
+
 </html>

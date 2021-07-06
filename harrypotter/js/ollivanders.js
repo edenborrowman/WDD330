@@ -82,7 +82,7 @@ function wandMagic() {
   console.log(randomMessage);
   let wandChime = new Audio('audio/wandharp.wav');
   
-  if (randomWand == 7 || randomWand == 5 || randomWand == 3) {
+  if (randomMessage == 7 || randomMessage == 5 || randomMessage == 3) {
     wandChime.play();
     wand.classList.add('wand_is_chosen');
     document.getElementById("wandMessage").textContent = "You have been chosen! This is your wand.";
