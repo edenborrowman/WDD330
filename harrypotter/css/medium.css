@@ -9,4 +9,29 @@
  grid-template-columns: 1fr 1fr;
  grid-gap: 1rem;
 }
+
+.oliWelcome{
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+}
+
+.wand_icon{
+    width: 300px;
+}
+
+span.title_size{
+    font-size:5rem;    
+}
+
+h1.title {
+    font-weight: 400;
+    margin-top: -20px;
+    line-height: 4rem;
+}
+
+span.title_size{
+    font-size:5rem;
+    display: block;
+}
 }
