@@ -22,6 +22,7 @@
         </a>
     </header>
     <main class="spellPage">
+        <div id=spell_wrapper>
         <div id="spellContainer">
             <div id="spell_details">
                 <p id="spell_name"></p>
@@ -31,6 +32,7 @@
             <canvas id="canvas">
             </canvas>
         </div>
+    </div>
     </main>
     <footer class="spell_bottom">
         <h2 class="subhead">Wandwork is all in the wrist. Swish and flick. Practice until you can cast these spells
@@ -40,8 +42,8 @@
             <button id="new_spell" onclick="newSpell()">Try A New Spell</button>
         </div>
     </footer>
-    <script src="js/wand.js"></script>
-    <script src="js/spells.js"></script>
+    <script src="js/wand.js" type="module"></script>
+    <script src="js/spells.js" type="module"></script>
 </body>
 
 </html>

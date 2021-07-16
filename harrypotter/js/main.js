@@ -7,11 +7,9 @@ function fetch_info(url) {
     fetch(url)
         .then(response => response.json())
         .then(json => {
-            // console.table(json)
-
+           
             const characters = json;
-            // console.table(characters);
-
+           
             //declare elements for trading cards
             for (let i = 0; i < characters.length; i++) {
                 let card = document.createElement('div');
@@ -31,9 +29,7 @@ function fetch_info(url) {
 
             //Add an event listener to the card so we can play the sound
                 card.addEventListener('transitionstart', () => {
-                    console.log('transition started');
-                    pageSound.play();
-                    console.log(pageSound);
+                    pageSound.play();                    
                 })
 
             
@@ -48,7 +44,6 @@ function fetch_info(url) {
                 image.setAttribute('src', characters[i].image,);
                 image.setAttribute('alt', characters[i].name);
                 image.setAttribute('class', 'cardImages');
-                // front.setAttribute('class', 'hide');
                 ancestry.textContent = 'Ancestry:' + ' ' + characters[i].ancestry;
                 yearOfBirth.textContent = 'Year of Birth:' + ' ' + characters[i].yearOfBirth;
                 hairColour.textContent = 'Hair Colour:' + ' ' + characters[i].hairColour;
@@ -57,10 +52,7 @@ function fetch_info(url) {
                 species.textContent = 'Species:' + ' ' + characters[i].species;
                 patronus.textcontent = 'patronus' + ' ' + characters[i].patronus
                 wand.textContent = 'Wand:' + ' ' + characters[i].wand.wood + ',' + ' ' + characters[i].wand.core + ',' + ' ', + characters[i].wand.length + ' ', + 'inches';
-             
-                
-                // console.log(wand.textContent);
-                
+                                                        
 
             //Information going to the page
                 card.appendChild(front);

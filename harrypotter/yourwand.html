@@ -17,15 +17,12 @@
     <link rel="manifest" href="images/site.webmanifest">
 <body class="bricks">
     <header><a href="index.html">
-        <h1 class="title">The Wonderful World of <br><span class="title_size">Harry Potter</span></h1>
-        
-        
-    </a></header>
+        <h1 class="title">The Wonderful World of <br><span class="title_size">Harry Potter</span></h1>        
+        </a>
+    </header>
     <main>  
         
-        <div id="wandContainer">
-            <img id="yourWand" src="" alt="">
-        </div>
+        
      
         <div id="instructions">
             <p id="wood"></p>
@@ -37,14 +34,18 @@
         <div id="olli_comm">
             <p id="wandMessage"></p>
         </div>
-        
+        <div id="wandContainer">
+            <img id="yourWand" src="" alt="">
+        </div>
       
     </main>
    
-    <script src="js/ollivanders.js"></script>
+    <script src="js/ollivanders.js" type="module"></script>
     <footer class="wand_bottom">
         <h2 class="subhead">This much is clear: the wand chooses the wizard. Click on this wand to see if it's yours.</h2>   
-        <button id="reset_button" onclick="reset()">Try A Different Wand</button>        
+        <button id="reset_button">
+         <!-- onclick="reset()" -->
+         Try A Different Wand</button>        
    </footer>
 </body>
 </html>

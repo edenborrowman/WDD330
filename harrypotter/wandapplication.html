@@ -22,12 +22,12 @@
     <main >  
         <p>Welcome to Ollivanders, home of the finest wands known to the wizarding world. To begin the wand selection process, please complete the following official Ministry of Magic application form.</p>
         <div class="formdiv">
-            <form method="get" action="yourwand.html">
+            <form name="wandApp" method="get" action="yourwand.html" onsubmit="return validateForm()">
                 <fieldset>
                     <legend class="legendtitle">Applicant's Information</legend>
                     <label class="top">First Name*<input type="text" name="fname" required></label>
                     <label class="top">Last Name*:<input type="text" name="lname" required /> </label>
-           "         <label class="top">Country of Birth<input type="text" name="country" placeholder="United States of America" required />
+                    <label class="top">Country of Birth<input type="text" name="country" placeholder="United States of America" required />
                     </label>
 
                     <label class="top">Ancestry*</label>
@@ -42,7 +42,7 @@
                     </label>
                 </fieldset>
                 <fieldset>
-                    <legend class="legendtitle">Magical Education</legend>
+                    <legend name="school" class="legendtitle">Magical Education</legend>
                     <label class="top">School Attended*<input type="text" name="school" required></label>
                     <label class="top">Date Begun<input type="date" name="date"></label>
                     <label class="top">Date Ended<input type="date" name="date"></label>
@@ -78,5 +78,6 @@
        
     </main>
     <footer><p>&copy Eden Borrowman 2021</p></footer>
+    <script src="js/form.js"></script>
 </body>
 </html>

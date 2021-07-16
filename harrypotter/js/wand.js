@@ -1,3 +1,5 @@
+import { resize } from "./canvasController.js";
+
 // wait for the content of the window element
 // to load, then performs the operations.
 // This is considered best practice.
@@ -16,10 +18,7 @@ const canvas = document.querySelector('#canvas');
 const ctx = canvas.getContext('2d');
     
 // Resizes the canvas to the available size of the window.
-function resize(){
-    ctx.canvas.width = window.innerWidth;
-    ctx.canvas.height = window.innerHeight * .5;
-}
+resize();
     
 // Stores the initial position of the cursor
 let coord = {x:0 , y:0}; 

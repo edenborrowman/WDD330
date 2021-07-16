@@ -1,3 +1,7 @@
+import { wandChime } from "./audio.js";
+import { bustSwish } from "./audio.js";
+import { reset } from "./reset.js";
+
 let wands = [
     {
         wood: 'Holly',
@@ -53,6 +57,7 @@ let core = document.getElementById("core");
 let character = document.getElementById("character");
  
 wand.src = wands[randomWand].url;
+wand.setAttribute("alt", "A new wand");
 wood.innerText = "Wood: " + wands[randomWand].wood;
 length.innerText = "Length: " + wands[randomWand].length;
 core.innerText = "Core: " + wands[randomWand].core;
@@ -80,7 +85,7 @@ let wandMsg = [
 function wandMagic() {
   let randomMessage = Math.floor(Math.random() * 10);
   console.log(randomMessage);
-  let wandChime = new Audio('audio/wandharp.wav');
+ 
   
   if (randomMessage == 7 || randomMessage == 5 || randomMessage == 3) {
     wandChime.play();
@@ -90,6 +95,7 @@ function wandMagic() {
 
     }
   else {
+      bustSwish.play();
       document.querySelector("#wandMessage").textContent = wandMsg[randomWand];
     }
 }
@@ -99,6 +105,6 @@ function resetWand() {
   wand.classList.remove('wand_is_chosen');
 }
 
-function reset() {
-  location = location;
-}
+document.querySelector("#reset_button").addEventListener("click", (event) => {
+  reset()
+});

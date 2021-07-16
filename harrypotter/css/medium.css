@@ -18,20 +18,32 @@
 
 .wand_icon{
     width: 300px;
+    margin:0;
+    margin-top: 8%;
 }
 
 span.title_size{
     font-size:5rem;    
 }
 
-h1.title {
+h1.title  {
     font-weight: 400;
     margin-top: -20px;
     line-height: 4rem;
 }
 
-span.title_size{
+span.title_size,.hat_title{
     font-size:5rem;
-    display: block;
+    
+}
+
+#yourWand {
+    height: 70%;
+    bottom: 10px;
+
+}
+
+.wand_bottom {
+    height: 50px;
 }
 }

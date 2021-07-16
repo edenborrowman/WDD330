@@ -5,14 +5,17 @@ body{
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+    height: 100vh;
+    width: 100vw;
 }
 main{
     margin: auto;
     max-width: 800px;
+    height: 100vh;
     
 }
 
-h1.title {
+h1.title, h1 {
     font-family: 'Mountains of Christmas', cursive;
     color: #F2B705;
     font-weight: 400;   
@@ -39,6 +42,7 @@ header{
     background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/hogwarts.svg");
     background-repeat: repeat-x;
     background-position: center bottom;
+    min-width: 100vw;
     
   
 }
@@ -87,6 +91,9 @@ a:hover {
 }
 
 footer{
+position: fixed;
+left: 0;
+bottom: 0px;
 background-color: #750022;
 text-align: center;
 padding: 2%;
@@ -95,6 +102,7 @@ bottom:0;
 left:0;
 right:0;
 height:20px;
+width: 100vw;
 }
 
 /* Sorting Hat Page */
@@ -265,13 +273,16 @@ height:20px;
 }
 
 .oliWelcome{
-    display: flex;
-    flex-direction: column;
+    display: flex-wrap;
+    flex-direction: row !important;    
   justify-content: center;
   align-items: center;
   height: 50vh;
+  margin-top: 3%;
+  text-align: center;
  
 }
+
 
 #oliLogo{    
     width: 80%;  
@@ -323,15 +334,12 @@ position:fixed;
  left:0;
 }
 
-.oliWelcome{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    margin-top: 3%;
-}
+
 
 .wand_icon{
     width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wand_menu {
@@ -434,6 +442,7 @@ h1.h1sc {
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 13rem;
     align-items: center;
     justify-content: center;
     width: 50%;
@@ -441,15 +450,14 @@ h1.h1sc {
 }
 
 #yourWand {
-    height: 60%;
     filter: contrast(200%);
     position: absolute;
-    bottom: 50px;
 }
 
 #yourWand:hover{
     transform: scale(1.1);
-    transition: transform .5s ease;
+    /* transform-origin: top; */
+    transition: transform .5s ease-in-out;
 }
 
     .chalk {
@@ -503,7 +511,7 @@ h1.h1sc {
     }
 
         .wand_bottom {
-            height: 50px;
+            height: 100px;
             position:fixed;
            bottom:0;
             left:0;
@@ -522,6 +530,7 @@ main.spellPage{
     
     margin-left: auto;
     margin-right: auto;
+    
  
       
 }

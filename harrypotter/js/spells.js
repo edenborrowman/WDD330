@@ -1,3 +1,6 @@
+import { reset } from "./reset.js";
+import { resize } from "./canvasController.js";
+
 let spells = [
     {
         name: 'Alohamora',
@@ -101,19 +104,22 @@ let spells = [
 
 ];
 
-console.table(spells);
 
 let randomSpell = Math.floor(Math.random() * spells.length);
-console.log(randomSpell);
+
     
 document.getElementById('spellContainer').style.background = "url('" + spells[randomSpell].url + "') no-repeat center";
 document.getElementById('spell_name').textContent = "Name: " + spells[randomSpell].name;
 document.getElementById('class').textContent = "Class: " + spells[randomSpell].class;
 document.getElementById('purpose').textContent = "Purpose: " + spells[randomSpell].purpose;
 
-console.log(document.body.style.background);
 
-function newSpell() {
-    location = location;
-}
+document.querySelector("#new_spell").addEventListener("click", (event) => {
+    reset()
+});
+  
+document.querySelector("#reset_button").addEventListener("click", (event) => {
+    resize()
+  });
+
     

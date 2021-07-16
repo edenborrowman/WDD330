@@ -1,4 +1,6 @@
 import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+import { click } from "./audio.js";
+import { resetHat } from "./reset.js";
 
 let houses = [
     "Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"
@@ -9,7 +11,7 @@ let houses = [
 var hat = document.querySelector("#hat");
 document.querySelector("#hat").addEventListener("click", (event) => {
     // Clear out any old styling
-    reset();
+    resetHat();
     hat.classList.add("sort_in_progress");
     setTimeout(magical_change, 3000);    
 });
@@ -19,8 +21,7 @@ document.querySelector("#hat").addEventListener("click", (event) => {
 function magical_change() {
     // Generate random number
     var randomNum = Math.floor(Math.random() * houses.length);
-    console.log(randomNum);
-   
+       
     // Assign a house
     var assigned_house = houses[randomNum];
 
@@ -42,13 +43,9 @@ function magical_change() {
     confetti();        
     }
  
-    var click = new Audio('audio/harp.wav');
+    
 
-function reset(){
-    document.querySelector(".announcement").textContent = "";
-    document.querySelector(".student").src = "images/harry_pre_sort.svg"
-    document.querySelector("#hat").src = "images/sorting_hat_illustration_1.svg";   
-}
+
 
 
  
