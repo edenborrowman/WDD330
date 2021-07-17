@@ -552,7 +552,11 @@ main.spellPage{
     z-index: 1;
     left: 20%;
     text-align: left;
-    
+    -webkit-user-select: none;  
+    -moz-user-select: none;     
+    -ms-user-select: none;      
+    user-select: none;                
+         
 }
 
 #reset_button, #new_spell, #tryAgain {
