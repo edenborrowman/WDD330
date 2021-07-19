@@ -76,14 +76,14 @@ header{
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
     
 }
 
 a:hover {
     transform: scale(1.1);
     transition: transform .75s;
-    color:#750022;
+    color:#F2B705;
 }
 .shield:hover{
     transform: scale(1.1);
@@ -529,6 +529,7 @@ main.spellPage{
     margin: 0; 
     max-width: 100%;
     text-align: center; 
+    
 }
 
 #spellContainer{
@@ -576,8 +577,47 @@ main.spellPage{
     left:0;
 }
 
+/* credits */
 
+#cred_h2{
+    color:#F2B705;
+    font-family: "Mountains of Christmas", script;
+    font-size: 3rem;
+    
+}
+.cred_h3 {
+    font-size: 2rem;
+}
+  
 
-
-
+  .crawl {
+    position: relative;
+    top: 300px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+    z-index: -10;
+    color: #F2B705;
+    line-height: 2rem;
+  }
+  .crawl a {
+      color:#F2B705;
+  }
+  
+  .crawl > .title {
+    text-align: center;
+  }
+  
+  .crawl > .title h2 {
+    margin: 300px 0 100px;
+    text-transform: uppercase;
+  }
+  
+  @keyframes crawl {
+    0% {
+      top: 0;     
+    }
+    100% { 
+      top: -4000px;      
+    }
+  }
 
