@@ -108,7 +108,7 @@ let spells = [
 let randomSpell = Math.floor(Math.random() * spells.length);
 
     
-document.getElementById('spellContainer').style.background = "url('" + spells[randomSpell].url + "') no-repeat center";
+document.getElementById('spellContainer').style.background = "url('" + spells[randomSpell].url + "')";
 document.getElementById('spell_name').textContent = "Name: " + spells[randomSpell].name;
 document.getElementById('class').textContent = "Class: " + spells[randomSpell].class;
 document.getElementById('purpose').textContent = "Purpose: " + spells[randomSpell].purpose;

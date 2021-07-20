@@ -46,10 +46,10 @@ header{
     background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/hogwarts.svg");
     background-repeat: repeat-x;
     background-position: center bottom;  
-    min-width: 100%;
+    width: 100vw !important;
 }
 
-.go_home {
+.fa-home {
     background-color: black;
     border: none;
     color: white;
@@ -63,9 +63,9 @@ header{
     top: 0;
   }
 
-  .go_home:hover {
+  .fa-home:hover {
     background-color: #F2B705;
-    color: black;
+    color: black !important;
   }
 
 .shield{
@@ -140,9 +140,10 @@ height:20px;
 }
 
 .hat_title {
-    font-size: 2rem;
+    font-size: 2rem !important;
     margin-top: 0;
     margin-bottom: 10%;
+    line-height: 3rem !important;
 }
 
 .bricks {
@@ -561,6 +562,9 @@ main.spellPage{
     
     margin-left: auto;
     margin-right: auto;
+    background-position:center bottom !important;
+    background-repeat:no-repeat !important;
+   
     
  
       
@@ -583,6 +587,10 @@ main.spellPage{
     -ms-user-select: none;      
     user-select: none;                
          
+}
+
+h2.subhead {
+    user-select: none;
 }
 
 #reset_button, #new_spell, #tryAgain {

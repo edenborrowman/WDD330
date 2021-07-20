@@ -47,10 +47,8 @@ span.title_size,.hat_title{
     height: 50px;
 }
 
-#hat{
-    width: 420px;
-    height: 420px;
-    position: absolute;
+.hat_title{
+    font-size: 4rem !important;
 }
 .student{
     width: 200px;
@@ -64,13 +62,10 @@ span.title_size,.hat_title{
 
 #hat{
     width: 420px;
+    height: 420px;
     position: fixed;
    bottom: 200px;
     
-}
-.student{
-
-    width: 200px;    
 }
 
 @keyframes fade-in {
