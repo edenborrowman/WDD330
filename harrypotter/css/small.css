@@ -448,7 +448,7 @@ position:fixed;
   }
   
   input.txtarea {
-    width: 100%;
+    width: 85%;
       height: 120px;
       border: solid 1px #999;
       border-radius: 4px;

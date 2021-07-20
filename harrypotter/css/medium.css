@@ -117,4 +117,8 @@ span.title_size,.hat_title{
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
+input.txtarea {
+    width: 100%;
+}
 }
