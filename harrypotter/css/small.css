@@ -243,7 +243,7 @@ height:20px;
     text-align: center; 
     margin-left: auto;
     margin-right: auto;
-    max-width: 300;
+    max-width: 300px;
     height: 375px;
     background-color:#750022;
     background: url("https://edenborrowman.github.io/wdd330/harrypotter/images/paper17.svg");
@@ -293,13 +293,10 @@ height:20px;
 }
 
 .oliWelcome{
-    display: flex-wrap;
-    flex-direction: row !important;    
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  margin-top: 3%;
-  text-align: center;
+    display: block;  
+    height: 20vh;
+    margin-top: 3%;
+    text-align: center;
  
 }
 
