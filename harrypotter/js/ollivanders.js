@@ -84,8 +84,7 @@ let wandMsg = [
 
 function wandMagic() {
   let randomMessage = Math.floor(Math.random() * 10);
-  console.log(randomMessage);
- 
+
   
   if (randomMessage == 7 || randomMessage == 5 || randomMessage == 3) {
     wandChime.play();
