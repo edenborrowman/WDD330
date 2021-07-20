@@ -320,6 +320,13 @@ button#wandEnter {
     padding: 15px;
 }
 
+p.wand_menu {
+    color: black;
+}
+p.wand_menu:hover{
+    color:#750022;
+}
+
 /* wand page */
 
 
