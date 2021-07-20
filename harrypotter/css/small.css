@@ -49,21 +49,23 @@ header{
     /* width: 100vw !important; */
 }
 
-.fa-home {
+.home {
     background-color: black;
     border: none;
     color: white;
-    width: 10px;
-    height: 10px;
-    padding: 12px 12px;
-    font-size: 16px;
+    width: 15px;
+    height: 15px;
+    padding: 0 12px 20px 12px;
+    font-size: 25px;
+    margin-top: 0;
+    text-align: center;
     cursor: pointer;
     position: absolute;
     left: 0;
     top: 0;
   }
 
-  .fa-home:hover {
+  .home:hover {
     background-color: #F2B705;
     color: black !important;
   }
