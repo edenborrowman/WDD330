@@ -4,7 +4,7 @@
 body{
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    margin: 0;
     height: 100vh;
     width: 100vw;
 }
@@ -15,7 +15,7 @@ main{
     
 }
 
-h1.title, h1 {
+h1 {
     font-family: 'Mountains of Christmas', cursive;
     color: #F2B705;
     font-weight: 400;   
@@ -23,7 +23,7 @@ h1.title, h1 {
     font-size: 1.5rem;
 }
 
-span.title_size{
+.title_size{
     font-size:2.5rem;
     display: block;
 }
@@ -116,8 +116,6 @@ a:hover {
 
 footer{
 position: fixed;
-left: 0;
-bottom: 0px;
 background-color: #750022;
 text-align: center;
 padding: 2%;
@@ -306,7 +304,7 @@ height:20px;
     padding: 5%;  
 }
 
-button#wandEnter {  
+#wandEnter {  
     background-color: black;
     padding: 5px;
     border-radius: 5px;
@@ -333,7 +331,7 @@ p.wand_menu:hover{
     max-width: 500px;
 }
 
-main.wand {
+.wand {
     width: 100%;
     margin: 0; 
     max-width: 100%;
@@ -379,7 +377,7 @@ position:fixed;
 
 /* wand application */
 
-h1.h1sc {
+.h1sc {
     font-size: 2.2rem;
   }
 
@@ -424,13 +422,13 @@ h1.h1sc {
       background-color: rgba(0,0,0,0.1);
   }
   
-  form label.sbs {
+  .sbs {
       display: block;
       padding: .75rem 0;
       color: #555;
        
   }
-  form input.submitBtn {
+  .submitBtn {
       border: none;
       background-color:#750022;
       color: white;
@@ -459,7 +457,7 @@ h1.h1sc {
       max-width: 98%;
   }
   
-  form select.formbut {
+ .formbut {
     padding: 10px;
     border-radius: 4px;
   }
@@ -587,7 +585,7 @@ main.spellPage{
          
 }
 
-h2.subhead {
+.subhead {
     user-select: none;
 }
 
