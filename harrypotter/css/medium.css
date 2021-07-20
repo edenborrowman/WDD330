@@ -46,4 +46,72 @@ span.title_size,.hat_title{
 .wand_bottom {
     height: 50px;
 }
+
+#hat{
+    width: 420px;
+    height: 420px;
+    position: absolute;
+}
+.student{
+    width: 200px;
+    height: 300px;
+}
+
+.sort_in_progress{
+    transform: translate(0px, 100px);
+    
+}
+
+#hat{
+    width: 420px;
+    position: fixed;
+   bottom: 200px;
+    
+}
+.student{
+
+    width: 200px;    
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    } 
+}
+
+.sort_in_progress{
+    transform: translate(0px, 100px);
+    
+}
+
+#sort_directions{
+        bottom: 0px;   
+}
+
+.announcement_div{
+    font-size: 2rem;
+}
+
+#spell_name, #class, #purpose {
+    font-size: 1.2rem;
+}
+
+.spell_bottom {
+    height: 10%;;
+}
+
+#spell_details{
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    text-align: left;
+    -webkit-user-select: none;  
+    -moz-user-select: none;     
+    -ms-user-select: none;      
+    user-select: none;                
+         
+}
 }

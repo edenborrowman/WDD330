@@ -16,20 +16,23 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="manifest" href="images/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body class="bricks">
   <header><a href="index.html">
+    <div class="go_home"><a href="index.html"><i class="fa fa-home"></i></a></div>
       <h1 class="hat_title"> Hogwarts Sorting Hat</h1>
       <p id="sort_directions">Click on the magical hat to be sorted into a house.</p>
     </a>
   </header>
-  <main>
+  <main class="sorting_main">
+    <div class="announcement_div">
+      <h2 class="announcement"></h2>
+    </div>
     <div class="sorting_area">
       <img id="hat" class="hide" src="images/sorting_hat_illustration_1.svg" alt="The Sorting Hat">
       <img src="images/harry_pre_sort.svg" class="student" alt="A Hogwarts Student">
-      <div class="announcement_div">
-        <h2 class="announcement"></h2>
-      </div>
+      
     </div>
 
   </main>

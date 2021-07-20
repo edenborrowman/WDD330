@@ -28,6 +28,10 @@ span.title_size{
     display: block;
 }
 
+.title{
+   padding: 0;    
+}
+
 #sort_directions{
     color: white;
     
@@ -41,11 +45,28 @@ header{
     padding: 3%;
     background-image: url("https://edenborrowman.github.io/wdd330/harrypotter/images/hogwarts.svg");
     background-repeat: repeat-x;
-    background-position: center bottom;
-    min-width: 100vw;
-    
-  
+    background-position: center bottom;  
+    min-width: 100%;
 }
+
+.go_home {
+    background-color: black;
+    border: none;
+    color: white;
+    width: 10px;
+    height: 10px;
+    padding: 12px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .go_home:hover {
+    background-color: #F2B705;
+    color: black;
+  }
 
 .shield{
     width: 120px;
@@ -103,10 +124,14 @@ bottom:0;
 left:0;
 right:0;
 height:20px;
-width: 100vw;
+
 }
 
 /* Sorting Hat Page */
+
+.sorting_main{
+    max-height: 50vh;
+}
 
 .sorting_area{
     display: flex;
@@ -115,7 +140,9 @@ width: 100vw;
 }
 
 .hat_title {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 10%;
 }
 
 .bricks {
@@ -123,12 +150,9 @@ width: 100vw;
 }
 
 #hat{
-    width: 420px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 200px;
-    right: 0;
+    width: 210px;
+    position: fixed;
+   bottom: 100px;
     margin: auto auto 0;
     z-index: 1; 
     transition:transform 2s ease; 
@@ -137,6 +161,12 @@ width: 100vw;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 1s  
+}
+.student{
+    position:fixed;
+    bottom:0px;
+    margin: auto auto 0;
+    width: 100px;    
 }
 
 @keyframes fade-in {
@@ -149,18 +179,10 @@ width: 100vw;
 }
 
 .sort_in_progress{
-    transform: translate(0px, 100px);
+    transform: translate(0px, 50px);
     
 }
-.student{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto auto 0;
-    width: 200px;    
-}
+
 
 .sort {
     padding: 10px;
@@ -178,16 +200,18 @@ width: 100vw;
     color: white;
 }
 
-.announcement_div {
-    color: #F2B705; 
+.announcement_div {    
     font-family: 'Mountains of Christmas', cursive;
-    font-size: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
   }
 
-  #sort_directions{
+   #sort_directions{
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: -20px;
       right: 0;
   }
 
@@ -546,7 +570,7 @@ main.spellPage{
     font-family: 'Homemade Apple', cursive;
     color: white;
     line-height: 1rem;  
-    font-size: 1.2rem;  
+    font-size: .75rem;  
 }
 
 #spell_details{
@@ -572,7 +596,7 @@ main.spellPage{
 }
 
 .spell_bottom {
-    height: 10%;
+    height: 20%;
     position:fixed;
    bottom:0;
     left:0;

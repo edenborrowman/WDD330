@@ -6,4 +6,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
    }
+
+   .hatTitle{
+       font-size: 3rem;
+   }
+
+   .announcement_div{
+    font-size: 2.5rem;
+}
 }
