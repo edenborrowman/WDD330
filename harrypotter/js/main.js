@@ -12,8 +12,7 @@ function fetch_info(url) {
            
             //declare elements for trading cards
             for (let i = 0; i < characters.length; i++) {
-                let card = document.createElement('div');
-                let section = document.createElement('section');
+                let card = document.createElement('div');                
                 let front = document.createElement('div');
                 let back = document.createElement('div');
                 let name = document.createElement('h2');
@@ -23,7 +22,9 @@ function fetch_info(url) {
                 let gender = document.createElement('p');
                 let hairColour = document.createElement('p');                          
                 let species = document.createElement('p');
-                let wand = document.createElement('p');
+                let wandWood = document.createElement('p');
+                let wandCore = document.createElement('p');
+                let wandLength = document.createElement('p');
                 let patronus = document.createElement('p');
                 let image = document.createElement('img');
 
@@ -42,6 +43,7 @@ function fetch_info(url) {
                 back.setAttribute('class', 'back');                
                 name.textContent = characters[i].name;
                 image.setAttribute('src', characters[i].image,);
+                image.setAttribute('loading', 'lazy');
                 image.setAttribute('alt', characters[i].name);
                 image.setAttribute('class', 'cardImages');
                 ancestry.textContent = 'Ancestry:' + ' ' + characters[i].ancestry;
@@ -51,9 +53,11 @@ function fetch_info(url) {
                 gender.textContent = 'Gender:' + ' ' + characters[i].gender;
                 species.textContent = 'Species:' + ' ' + characters[i].species;
                 patronus.textcontent = 'patronus' + ' ' + characters[i].patronus
-                wand.textContent = 'Wand:' + ' ' + characters[i].wand.wood + ',' + ' ' + characters[i].wand.core + ',' + ' ', + characters[i].wand.length + ' ', + 'inches';
-                                                        
-
+                wandWood.textContent = 'Wand Wood:' + ' ' + characters[i].wand.wood;
+                wandCore.textContent = 'Wand Core: ' + characters[i].wand.core;
+                wandLength.textContent = 'Wand Length: ' + characters[i].wand.length + ' inches';
+                patronus.textContent = 'Patronus: ' + characters[i].patronus;
+                     
             //Information going to the page
                 card.appendChild(front);
                 card.appendChild(back);                
@@ -66,12 +70,14 @@ function fetch_info(url) {
                 back.appendChild(gender);
                 back.appendChild(species);
                 back.appendChild(patronus);
-                back.appendChild(wand);
+                back.appendChild(wandWood);
+                back.appendChild(wandCore);
+                back.appendChild(wandLength);
+                back.appendChild(patronus);
          
 
             //append card  
-                document.querySelector('div.wrapper').appendChild(card)    
-                document.querySelector('div.card').appendChild(section);
+                document.querySelector('div.wrapper').appendChild(card)              
             }
 
             
