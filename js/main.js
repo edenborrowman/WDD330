@@ -90,6 +90,48 @@ let links = [
         teamUrl: "quake_app/index.html",
         assignment: "Second Block Project In Progress",
         assignmentUrl: "harrypotter/index.html"        
+    },
+    {
+        label: "Week 11: June 28 - July 4",
+        notes: "None",
+        url: "",
+        group: "Authentication with JWT",
+        teamUrl: "/week11/client/week11.html",
+        assignment: "Second Block Project In Progress",
+        assignmentUrl: "harrypotter/index.html"        
+    },
+
+    {
+        label: "Week 12: June 28 - July 4",
+        notes: "None",
+        url: "",
+        group: "none",
+        assignment: "Second Block Project In Progress",
+        assignmentUrl: "harrypotter/index.html"        
+    },
+    {
+        label: "Week 13: July 5 - July 11",
+        notes: "None",
+        url: "",
+        group: "none",
+        assignment: "Second Block Project In Progress",
+        assignmentUrl: "harrypotter/index.html"        
+    },
+    {
+        label: "Week 13: July 12 - July 19",
+        notes: "None",
+        url: "",
+        group: "none",
+        assignment: "Second Block Project In Progress",
+        assignmentUrl: "harrypotter/index.html"        
+    },
+    {
+        label: "Week 13: July 20 - July 24",
+        notes: "None",
+        url: "",
+        group: "none",
+        assignment: "Second Block Project Final",
+        assignmentUrl: "harrypotter/index.html"        
     }
         
 ]
