@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  header,
+  main,
+  footer {
+    margin: 1.25rem auto;
+    max-width: 760px;
+    font-family:'Amatic SC', 'Poppins', 'Helvetica', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  p, li {
+    font-family: 'EB Garamond', serif;
+  }
+  
+  header,
+  footer {
+    background-color: #28978e;
+    color: white;
+    text-align: left;
+  }
+
+  .headline_style_1 {
+    font-size: 5rem;
+  }
+
+  .pacifico{
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #23e5bf;
+  }
+
+  .helvetica{
+    font-family: 'Helvetica', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: #419c04;
+  }
+
+  a:hover {
+    color:#df9217
+  } 
+  
+  header {
+    padding: 1.5rem;
+  }
+  
+  footer {
+    font-size: 2em;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  footer a {
+    color: yellow;
+  }
+
+  footer a:visited {
+    color: rgb(250, 199, 104)
+  }
+
+  .subscript {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .sketch {
+    width: 400px;
+  }
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
